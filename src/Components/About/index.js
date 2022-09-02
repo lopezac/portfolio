@@ -1,12 +1,12 @@
 import AboutMe from "./AboutMe";
-import PhotoName from "./PhotoName";
+import Skills from "./Skills";
 
 function About() {
   return (
-    <section>
-      <PhotoName />
+    <main>
       <AboutMe />
-    </section>
+      <Skills />
+    </main>
   );
 }
 
