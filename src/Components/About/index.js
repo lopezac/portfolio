@@ -1,9 +1,11 @@
-import plantsImg from "../../Assets/Images/plants.jpg";
+import AboutMe from "./AboutMe";
+import PhotoName from "./PhotoName";
 
 function About() {
   return (
     <section>
-      <img src={plantsImg} alt="" width="300px" height="300px" />
+      <PhotoName />
+      <AboutMe />
     </section>
   );
 }
