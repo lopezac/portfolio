@@ -3,10 +3,10 @@ import Skills from "./Skills";
 
 function About() {
   return (
-    <main>
+    <>
       <AboutMe />
       <Skills />
-    </main>
+    </>
   );
 }
 
