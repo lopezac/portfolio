@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle(
     body {
       height: 100vh;
       color: ${theme.white};
+      font-family: "Noto Serif", Catamaran, arial;
       display: grid;
       grid-template-rows: auto 1fr auto;
       grid-template-columns: 1fr;

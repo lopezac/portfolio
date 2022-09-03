@@ -1,5 +1,5 @@
 import { HeaderDiv } from "../../Assets/Styles/GlobalStyle";
-import { StyledLink } from "../../Assets/Styles/Link";
+import { WhiteLink } from "../../Assets/Styles/Link";
 import { ListPadding } from "../../Assets/Styles/List";
 import { LiMarginLeft } from "../../Assets/Styles/ListItem";
 
@@ -9,13 +9,13 @@ function TopNav() {
       <nav>
         <ListPadding>
           <li>
-            <StyledLink to="/">Home</StyledLink>
+            <WhiteLink to="/">Home</WhiteLink>
           </li>
           <LiMarginLeft>
-            <StyledLink to="about">About</StyledLink>
+            <WhiteLink to="about">About</WhiteLink>
           </LiMarginLeft>
           <li>
-            <StyledLink to="projects">Projects</StyledLink>
+            <WhiteLink to="projects">Projects</WhiteLink>
           </li>
         </ListPadding>
       </nav>

@@ -32,5 +32,14 @@ export const MainFlexColCenter = styled(FlexColCenter)(
     padding: 30px;
     max-width: 1100px;
     margin: 0 auto;
+    height: 100%;
+  `
+);
+
+export const GrayDiv = styled.div(
+  ({ theme }) => `
+    background-color: ${theme.mediumGray};
+    padding: 0 10px;
+    min-height: 175px;
   `
 );

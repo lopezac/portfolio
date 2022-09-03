@@ -1,12 +1,12 @@
 import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 
-import { FlexList } from "../../Assets/Styles/List";
+import { ListNoMargin } from "../../Assets/Styles/List";
 import { WhiteAnchor } from "../../Assets/Styles/Link";
 
 export default function AuthorIcons() {
   return (
-    <FlexList>
+    <ListNoMargin>
       <li>
         <WhiteAnchor href="#">
           <FiMail />
@@ -22,6 +22,6 @@ export default function AuthorIcons() {
           <BsGithub />
         </WhiteAnchor>
       </li>
-    </FlexList>
+    </ListNoMargin>
   );
 }
