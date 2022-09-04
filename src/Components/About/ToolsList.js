@@ -5,37 +5,24 @@ import VSCodeLogo from "../../Assets/Icons/vscode-original.svg";
 import npmLogo from "../../Assets/Icons/npm-original.svg";
 import VimLogo from "../../Assets/Icons/vim-original.svg";
 import JestLogo from "../../Assets/Icons/jest-original.svg";
-import { FlexList } from "../../Assets/Styles/List";
+
+import { FlexListWrap } from "../../Assets/Styles/List";
 import { BigHeading } from "../../Assets/Styles/Para";
-import { IconImg } from "../../Assets/Styles/Image";
+import IconToolTip from "../Card/IconToolTip";
 
 function ToolsList() {
   return (
     <article>
       <BigHeading>Tools</BigHeading>
-      <FlexList>
-        <li>
-          <IconImg src={LinuxLogo} alt="Linux" />
-        </li>
-        <li>
-          <IconImg src={GitLogo} alt="Git" />
-        </li>
-        <li>
-          <IconImg src={WebpackLogo} alt="Webpack" />
-        </li>
-        <li>
-          <IconImg src={npmLogo} alt="npm" />
-        </li>
-        <li>
-          <IconImg src={VSCodeLogo} alt="Visual Studio Code" />
-        </li>
-        <li>
-          <IconImg src={VimLogo} alt="Vim" />
-        </li>
-        <li>
-          <IconImg src={JestLogo} alt="Jest" />
-        </li>
-      </FlexList>
+      <FlexListWrap>
+        <IconToolTip img={LinuxLogo} text="Linux" />
+        <IconToolTip img={GitLogo} text="Git" />
+        <IconToolTip img={WebpackLogo} text="Webpack" />
+        <IconToolTip img={npmLogo} text="npm" />
+        <IconToolTip img={JestLogo} text="Jest" />
+        <IconToolTip img={VSCodeLogo} text="Visual Studio Code" />
+        <IconToolTip img={VimLogo} text="Vim" />
+      </FlexListWrap>
     </article>
   );
 }

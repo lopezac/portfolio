@@ -27,6 +27,10 @@ export const SubTitle = styled.h2`
   margin: 0 0 20px 0;
   font-size: 2rem;
   text-align: center;
+
+  @media (min-width: 1200px) {
+    text-align: start;
+  }
 `;
 
 export const Heading = styled.h3`

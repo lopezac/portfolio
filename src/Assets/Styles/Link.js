@@ -43,3 +43,11 @@ export const WhiteAnchor = styled.a(
     }
   `
 );
+
+export const GrayAnchor = styled(WhiteAnchor)(
+  ({ theme }) => `
+    svg {
+      color: ${theme.lightGray};
+    }
+  `
+);

@@ -3,31 +3,22 @@ import HTMLLogo from "../../Assets/Icons/html5-original.svg";
 import CSSLogo from "../../Assets/Icons/css3-original.svg";
 import PythonLogo from "../../Assets/Icons/python-original.svg";
 import RubyLogo from "../../Assets/Icons/ruby-original.svg";
-import { FlexList } from "../../Assets/Styles/List";
+
+import { FlexListWrap } from "../../Assets/Styles/List";
 import { BigHeading } from "../../Assets/Styles/Para";
-import { IconImg } from "../../Assets/Styles/Image";
+import IconToolTip from "../Card/IconToolTip";
 
 function LanguagesList() {
   return (
     <article>
       <BigHeading>Languages</BigHeading>
-      <FlexList>
-        <li>
-          <IconImg src={JSLogo} alt="JavaScript" />
-        </li>
-        <li>
-          <IconImg src={HTMLLogo} alt="HTML5" />
-        </li>
-        <li>
-          <IconImg src={CSSLogo} alt="CSS" />
-        </li>
-        <li>
-          <IconImg src={PythonLogo} alt="Python" />
-        </li>
-        <li>
-          <IconImg src={RubyLogo} alt="Ruby" />
-        </li>
-      </FlexList>
+      <FlexListWrap>
+        <IconToolTip img={JSLogo} text="JavaScript" />
+        <IconToolTip img={HTMLLogo} text="HTML5" />
+        <IconToolTip img={CSSLogo} text="CSS" />
+        <IconToolTip img={PythonLogo} text="Python" />
+        <IconToolTip img={RubyLogo} text="Ruby" />
+      </FlexListWrap>
     </article>
   );
 }

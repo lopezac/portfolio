@@ -2,25 +2,25 @@ import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 
 import { ListNoMargin } from "../../Assets/Styles/List";
-import { WhiteAnchor } from "../../Assets/Styles/Link";
+import { GrayAnchor } from "../../Assets/Styles/Link";
 
 export default function AuthorIcons() {
   return (
     <ListNoMargin>
       <li>
-        <WhiteAnchor href="#" aria-label="Author Mail">
+        <GrayAnchor href="#" aria-label="Author Mail">
           <FiMail aria-label="Mail" />
-        </WhiteAnchor>
+        </GrayAnchor>
       </li>
       <li>
-        <WhiteAnchor href="#" aria-label="Author Instagram">
+        <GrayAnchor href="#" aria-label="Author Instagram">
           <BsInstagram aria-label="Instagram" />
-        </WhiteAnchor>
+        </GrayAnchor>
       </li>
       <li>
-        <WhiteAnchor href="#" aria-label="Author GitHub">
+        <GrayAnchor href="#" aria-label="Author GitHub">
           <BsGithub aria-label="GitHub" />
-        </WhiteAnchor>
+        </GrayAnchor>
       </li>
     </ListNoMargin>
   );

@@ -8,15 +8,15 @@ export const ProjectImg = styled.img`
 `;
 
 export const AuthorImg = styled.img`
-  width: 70%;
+  max-width: 80%;
   height: auto;
 
-  @media (min-width: 700px) {
-    width: 60%;
+  @media (min-width: 600px) {
+    max-width: 60%;
   }
 
   @media (min-width: 1200px) {
-    width: 125%;
+    max-width: 50%;
   }
 `;
 
