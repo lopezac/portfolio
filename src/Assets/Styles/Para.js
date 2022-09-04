@@ -5,10 +5,34 @@ export const Para = styled.p`
   font-size: 1rem;
 `;
 
-export const ParaNoPad = styled(Para)`
-  margin-top: 0;
-`;
+export const GrayPara = styled(Para)(
+  ({ theme }) => `
+    font-family: "Noto Serif", Garamond, serif;
+    color: ${theme.lightGray};
+  `
+);
+
+export const ParaNoPad = styled(Para)(
+  ({ theme }) => `
+    margin-top: 0;
+    color: ${theme.lightGray};  
+  `
+);
 
 export const Title = styled.h1`
+  font-size: 2.5rem;
+`;
+
+export const SubTitle = styled.h2`
+  margin: 0 0 20px 0;
   font-size: 2rem;
+  text-align: center;
+`;
+
+export const Heading = styled.h3`
+  font-size: 1.2rem;
+`;
+
+export const BigHeading = styled.h3`
+  font-size: 1.3rem;
 `;

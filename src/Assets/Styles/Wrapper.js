@@ -22,24 +22,35 @@ export const FlexCol = styled(FlexDiv)`
   flex-direction: column;
 `;
 
-export const FlexColCenter = styled(FlexCol)`
-  justify-content: center;
+export const FlexColAlign = styled(FlexCol)`
   align-items: center;
+  flex: 1; // may create bugs
 `;
 
-export const MainFlexColCenter = styled(FlexColCenter)(
-  ({ theme }) => `
-    padding: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
-    height: 100%;
-  `
-);
+export const MainFlexColCenter = styled(FlexCol)`
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+`;
+
+export const FlexColCenter = styled(FlexColAlign)`
+  justify-content: center;
+`;
+
+export const ResponsiveFlexCol = styled(FlexColAlign)`
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+  column-gap: 20px;
+  margin-bottom: 20px;
+`;
 
 export const GrayDiv = styled.div(
   ({ theme }) => `
     background-color: ${theme.mediumGray};
     padding: 0 10px;
     min-height: 175px;
+    border-radius: 0 0 5px 5px;
   `
 );

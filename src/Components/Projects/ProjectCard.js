@@ -1,23 +1,25 @@
 import ProjectIcons from "../IconsRow/ProjectIcons";
 import { ProjectImg } from "../../Assets/Styles/Image";
 import { FlexDiv, GrayDiv } from "../../Assets/Styles/Wrapper";
-import { ParaNoPad } from "../../Assets/Styles/Para";
+import { Heading, ParaNoPad } from "../../Assets/Styles/Para";
 import screenshotImg from "../../Assets/Images/screenshot.png";
+import { ShadowCard } from "../../Assets/Styles/Card";
 
 function ProjectCard() {
   return (
-    <article>
+    <ShadowCard>
       <ProjectImg alt="" src={screenshotImg} />
       <GrayDiv>
         <FlexDiv>
-          <h3>Aliqua deserunt ullamco</h3>
+          <Heading>Aliqua deserunt ullamco</Heading>
           <ProjectIcons githubURL="#" websiteURL="#" />
         </FlexDiv>
         <ParaNoPad>
-          Sunt consectetur non irure elit pariatur, irure elit pariatur.
+          Sunt consectetur non irure elit pariatur, irure elit pariatur. Sunt
+          consectetur non irure elit pariatur, irure elit pariatur.
         </ParaNoPad>
       </GrayDiv>
-    </article>
+    </ShadowCard>
   );
 }
 

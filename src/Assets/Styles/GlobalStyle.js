@@ -14,6 +14,11 @@ export const GlobalStyle = createGlobalStyle(
         "header"
         "main"
         "footer";
+
+      }
+
+    ::selection {
+      background-color: ${theme.violet};
     }
   `
 );
@@ -22,6 +27,7 @@ export const HeaderDiv = styled.header(
   ({ theme }) => `
     grid-area: header;
     background-color: ${theme.black};
+    border-bottom: 1px solid ${theme.lightViolet};
   `
 );
 
@@ -36,6 +42,7 @@ export const FooterDiv = styled.footer(
   ({ theme }) => `
     grid-area: footer;
     background-color: ${theme.black};
+    border-top: 1px solid ${theme.lightViolet};
 
     display: flex;
     flex-direction: column;

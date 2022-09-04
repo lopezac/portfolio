@@ -1,14 +1,19 @@
-import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 import { Title } from "../../Assets/Styles/Para";
+import { FlexColCenter } from "../../Assets/Styles/Wrapper";
+import { VioletBtn } from "../../Assets/Styles/Button";
+import { GrayLink } from "../../Assets/Styles/Link";
 
 export default function Home() {
   return (
-    <section>
-      <Title>Hello, my name is Axel Lopez, a Front End Developer</Title>
-      <button>
-        <Link to="about">Know more {">"}</Link>
-      </button>
-    </section>
+    <FlexColCenter>
+      <Title>Hello, I'm Axel Lopez, a Front End Developer</Title>
+      <VioletBtn>
+        <GrayLink to="about">
+          Know more <FaArrowRight />
+        </GrayLink>
+      </VioletBtn>
+    </FlexColCenter>
   );
 }

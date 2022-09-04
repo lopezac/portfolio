@@ -1,3 +1,4 @@
+import { SubTitle } from "../../Assets/Styles/Para";
 import LanguagesList from "./LanguagesList";
 import TechnologiesList from "./TechnologiesList";
 import ToolsList from "./ToolsList";
@@ -5,7 +6,7 @@ import ToolsList from "./ToolsList";
 function Skills() {
   return (
     <section>
-      <h2>My Skills</h2>
+      <SubTitle>My Skills</SubTitle>
       <LanguagesList />
       <TechnologiesList />
       <ToolsList />

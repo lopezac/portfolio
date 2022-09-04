@@ -1,25 +1,41 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export const WhiteLink = styled(Link)(
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-size: 1.5rem;
+`;
+
+export const WhiteLink = styled(StyledLink)(
   ({ theme }) => `
-    text-decoration: none;
     color: inherit;
-    font-size: 1.5rem;
 
     :hover, :focus {
       color: ${theme.lightViolet};
+      text-decoration: underline;
     }
 `
 );
 
+export const GrayLink = styled(StyledLink)(
+  ({ theme }) => `
+    color: ${theme.lightGray};
+
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    :hover, :focus {
+      color: ${theme.white};
+    }
+  `
+);
+
 export const WhiteAnchor = styled.a(
   ({ theme }) => `
-    color: inherit;
-
     svg {
-      color: white;
-      font-size: 1.5rem;
+      color: ${theme.white};
+      font-size: 2rem;
 
       :hover, :focus {
         color: ${theme.lightViolet};

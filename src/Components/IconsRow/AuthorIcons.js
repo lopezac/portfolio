@@ -8,18 +8,18 @@ export default function AuthorIcons() {
   return (
     <ListNoMargin>
       <li>
-        <WhiteAnchor href="#">
-          <FiMail />
+        <WhiteAnchor href="#" aria-label="Author Mail">
+          <FiMail aria-label="Mail" />
         </WhiteAnchor>
       </li>
       <li>
-        <WhiteAnchor href="#">
-          <BsInstagram />
+        <WhiteAnchor href="#" aria-label="Author Instagram">
+          <BsInstagram aria-label="Instagram" />
         </WhiteAnchor>
       </li>
       <li>
-        <WhiteAnchor href="#">
-          <BsGithub />
+        <WhiteAnchor href="#" aria-label="Author GitHub">
+          <BsGithub aria-label="GitHub" />
         </WhiteAnchor>
       </li>
     </ListNoMargin>
