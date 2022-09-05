@@ -1,0 +1,102 @@
+{
+  "projects": [
+    {
+      "title": "The Movie Database Clone",
+      "websiteURL": "https://imdb-9b89f.web.app/",
+      "githubURL": "https://github.com/lopezac/imdb-clone",
+      "img": "./Images/tmdb-clone.png",
+      "description": "A usable and dynamic TMDB clone, using the TMDB Oficial API, you can search movies, tv shows, people, sign up and rate movies, add movies to watchlist and more. Created with React and Firebase."
+    },
+    {
+      "title": "Where's Waldo",
+      "websiteURL": "https://wheres-waldo-49747.web.app/",
+      "githubURL": "https://github.com/lopezac/wheres-waldo",
+      "img": "./Images/wheres-waldo.png",
+      "description": "The classic where's waldo game, you gotta find 3 characters in each map, can send score and time to leaderboards. Created with React and Firebase."
+    },
+    {
+      "title": "CV Project",
+      "websiteURL": "https://lopezac.github.io/cv-project/",
+      "githubURL": "https://github.com/lopezac/cv-project",
+      "img": "./Images/cv-project.png",
+      "description": "A simple CV application, you can fill experience forms, add more experience, delete some and save it. Done with React"
+    },
+    {
+      "title": "Shopping Cart",
+      "websiteURL": "https://lopezac.github.io/shopping-cart/",
+      "githubURL": "https://github.com/lopezac/shopping-cart",
+      "img": "./Images/shopping-cart.png",
+      "description": "A Casio watches page, you can buy watches in shop, order them in the cart. Done with React and Jest."
+    },
+    {
+      "title": "Memory Card Game",
+      "websiteURL": "https://lopezac.github.io/memory-card/",
+      "githubURL": "https://github.com/lopezac/memory-card",
+      "img": "./Images/memory-card.png",
+      "description": "A memory game, done with the Simpsons style, you gotta pick every card, but if you repeat a card you lose, get to 12 of score and win."
+    },
+    {
+      "title": "Weather App",
+      "websiteURL": "https://lopezac.github.io/weather-app/",
+      "githubURL": "https://github.com/lopezac/weather-app",
+      "img": "./Images/weather-app.png",
+      "description": "(Click the button don't press enter), you can search cities, get the weather info and a Gif related. Done with Open Weather and Giphy APIs, JavaScript, HTML and CSS."
+    },
+    {
+      "title": "Library App",
+      "websiteURL": "https://lopezac.github.io/library-js/",
+      "githubURL": "https://github.com/lopezac/library-js",
+      "img": "./Images/library-js.png",
+      "description": "A simple Library, you can add and remove books, toggle if readed or not. Done with JavaScript, HTML and CSS."
+    },
+    {
+      "title": "To-Do List",
+      "websiteURL": "https://lopezac.github.io/todo-list/",
+      "githubURL": "https://github.com/lopezac/todo-list",
+      "img": "./Images/todo-list.png",
+      "description": "A To-Do List (Task Management) app, you can create projects, and tasks for each project, set priorities, add notes, description, titles, due dates. Done with JavaScript, HTML, CSS and LocalStorage."
+    },
+    {
+      "title": "Restaurant Page",
+      "websiteURL": "https://lopezac.github.io/restaurant-page/",
+      "githubURL": "https://github.com/lopezac/restaurant-page",
+      "img": "./Images/restaurant-page.png",
+      "description": "A simple Restaurant page, see popular foods from Argentina's Gastronomy. Done with JavaScript, HTML and CSS."
+    },
+    {
+      "title": "Tic Tac Toe",
+      "websiteURL": "https://lopezac.github.io/tic-tac-toe/",
+      "githubURL": "https://github.com/lopezac/tic-tac-toe",
+      "img": "./Images/tic-tac-toe.png",
+      "description": "A simple Tic Tac Toe game, completely usable and functional, done with HTML, CSS and JavaScript"
+    },
+    {
+      "title": "Dashboard Project",
+      "websiteURL": "https://lopezac.github.io/dashboard-project/index.html",
+      "githubURL": "https://github.com/lopezac/dashboard-project",
+      "img": "./Images/dashboard-project.png",
+      "description": "A simple dashboard, not usable, done to practice HTML and CSS."
+    },
+    {
+      "title": "Calculator",
+      "websiteURL": "https://lopezac.github.io/calculator-js/",
+      "githubURL": "https://github.com/lopezac/calculator-js",
+      "img": "./Images/calculator-js.png",
+      "description": "A simple calculator, able to sum, minus, multiply, divide and use comma. Done with Javascript, HTML and CSS."
+    },
+    {
+      "title": "Etch a Sketch",
+      "websiteURL": "https://github.com/lopezac/etch-a-sketch",
+      "githubURL": "https://lopezac.github.io/etch-a-sketch/index.html",
+      "img": "./Images/etch-a-sketch.png",
+      "description": "Simple grid drawing app, change grid size, pencil color and saturation. Done with Javascript, HTML and CSS."
+    },
+    {
+      "title": "Rock Paper Scissors",
+      "websiteURL": "https://lopezac.github.io/rock-paper-scissors/index.html",
+      "githubURL": "https://github.com/lopezac/rock-paper-scissors",
+      "img": "./Images/rock-paper-scissors.png",
+      "description": "A very simple rock paper scissors game. Done with Javascript, HTML and CSS."
+    }
+  ]
+}

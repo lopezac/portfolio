@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 `;
 
 export const WhiteLink = styled(StyledLink)(
@@ -35,7 +35,7 @@ export const WhiteAnchor = styled.a(
   ({ theme }) => `
     svg {
       color: ${theme.white};
-      font-size: 2rem;
+      font-size: 1.8rem;
 
       :hover, :focus {
         color: ${theme.lightViolet};

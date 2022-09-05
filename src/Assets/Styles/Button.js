@@ -12,3 +12,14 @@ export const VioletBtn = styled.button(
     }
   `
 );
+
+export const LinkBtn = styled.button(
+  ({ theme }) => `
+    background-color: ${theme.gray};
+    border: none;
+    color: ${theme.lightViolet};
+    text-decoration: underline;
+    display: inline;
+    cursor: pointer;
+  `
+);

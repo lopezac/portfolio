@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const FlexList = styled.ul`
   display: flex;
   padding: 0;
+  margin-top: 12px;
+  margin-bottom: 8px;
   list-style-type: none;
   gap: 15px;
 `;

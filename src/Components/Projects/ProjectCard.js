@@ -1,26 +1,32 @@
+import { string } from "prop-types";
+
 import ProjectIcons from "../IconsRow/ProjectIcons";
 import { ProjectImg } from "../../Assets/Styles/Image";
 import { FlexDiv, GrayDiv } from "../../Assets/Styles/Wrapper";
 import { Heading, ParaNoPad } from "../../Assets/Styles/Para";
-import screenshotImg from "../../Assets/Images/screenshot.png";
 import { ShadowCard } from "../../Assets/Styles/Card";
 
-function ProjectCard() {
+function ProjectCard({ title, description, websiteURL, githubURL, imgPath }) {
   return (
     <ShadowCard>
-      <ProjectImg alt="" src={screenshotImg} />
+      <ProjectImg alt={title} src={imgPath} />
       <GrayDiv>
         <FlexDiv>
-          <Heading>Aliqua deserunt ullamco</Heading>
-          <ProjectIcons githubURL="#" websiteURL="#" />
+          <Heading>{title}</Heading>
+          <ProjectIcons githubURL={githubURL} websiteURL={websiteURL} />
         </FlexDiv>
-        <ParaNoPad>
-          Sunt consectetur non irure elit pariatur, irure elit pariatur. Sunt
-          consectetur non irure elit pariatur, irure elit pariatur.
-        </ParaNoPad>
+        <ParaNoPad>{description}</ParaNoPad>
       </GrayDiv>
     </ShadowCard>
   );
 }
+
+ProjectCard.propTypes = {
+  title: string,
+  description: string,
+  websiteURL: string,
+  githubURL: string,
+  imgPath: string,
+};
 
 export default ProjectCard;
