@@ -1,5 +1,5 @@
 import { string } from "prop-types";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { IconImg } from "../../Assets/Styles/Image";
 import { ToolTipCard } from "../../Assets/Styles/Card";
@@ -7,8 +7,6 @@ import { LiRelative } from "../../Assets/Styles/ListItem";
 
 function IconToolTip({ img, text }) {
   const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {}, [isHovered]);
 
   function handleHoverIn() {
     setIsHovered(true);

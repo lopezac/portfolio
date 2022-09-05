@@ -3,7 +3,7 @@ import "modern-normalize";
 
 export const GlobalStyle = createGlobalStyle(
   ({ theme }) => `
-    body > div > div {
+    body {
       height: 100vh;
       color: ${theme.white};
       font-family: "Noto Serif", Catamaran, arial;

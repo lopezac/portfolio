@@ -1,8 +1,8 @@
 import screenshotImg from "../../Assets/Images/screenshot.png";
-import { LinkBtn } from "../../Assets/Styles/Button";
 import { AuthorImg } from "../../Assets/Styles/Image";
 import { SubTitle, Para } from "../../Assets/Styles/Para";
-import { FlexDiv, ResponsiveFlexCol } from "../../Assets/Styles/Wrapper";
+import { FlexAlignedDiv, ResponsiveFlexCol } from "../../Assets/Styles/Wrapper";
+import BtnToolTip from "../Card/BtnToolTip";
 import AuthorIcons from "../IconsRow/AuthorIcons";
 
 function AboutMe() {
@@ -22,12 +22,10 @@ function AboutMe() {
             Always been around computers since I've been a child, interested in
             Linux. I enjoy solving problems.
           </Para>
-          <FlexDiv>
+          <FlexAlignedDiv>
             <Para>Get in touch with me. Write me at</Para>
-            <LinkBtn id="emailBtn" data-clipboard-target="#emailBtn">
-              lopezaxel@protonmail.com
-            </LinkBtn>
-          </FlexDiv>
+            <BtnToolTip />
+          </FlexAlignedDiv>
           <AuthorIcons />
         </div>
       </ResponsiveFlexCol>

@@ -43,8 +43,10 @@ export const BigHeading = styled.h3`
   font-size: 1.3rem;
 `;
 
-export const SpecialWord = styled.em(
-  ({ theme }) => `
-    font-weight: 900;
-  `
-);
+export const SpecialWord = styled.em`
+  display: block;
+  transition: transform 100ms ease-in;
+  :hover {
+    transform: rotate(2deg);
+  }
+`;

@@ -18,6 +18,10 @@ export const FlexDiv = styled.div`
   display: flex;
 `;
 
+export const FlexAlignedDiv = styled(FlexDiv)`
+  align-items: center;
+`;
+
 export const FlexCol = styled(FlexDiv)`
   flex-direction: column;
 `;
@@ -54,3 +58,7 @@ export const GrayDiv = styled.div(
     border-radius: 0 0 5px 5px;
   `
 );
+
+export const RelativeDiv = styled.div`
+  position: relative;
+`;
