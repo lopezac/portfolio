@@ -46,7 +46,7 @@ export const ResponsiveFlexCol = styled(FlexColAlign)`
   @media (min-width: 1200px) {
     flex-direction: row;
   }
-  column-gap: 20px;
+  gap: 20px;
   margin-bottom: 20px;
 `;
 

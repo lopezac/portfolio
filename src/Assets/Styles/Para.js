@@ -47,6 +47,6 @@ export const SpecialWord = styled.em`
   display: block;
   transition: transform 100ms ease-in;
   :hover {
-    transform: rotate(2deg);
+    transform: rotate(1deg);
   }
 `;

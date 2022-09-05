@@ -3,8 +3,6 @@ import ProjectCard from "./ProjectCard";
 import projectsData from "../../Assets/projects.json";
 
 export default function ProjectsSection() {
-  console.log("projectsdata", projectsData.projects);
-
   return (
     <GridColumns3To1>
       {projectsData.projects.map((project) => {

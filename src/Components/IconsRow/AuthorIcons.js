@@ -8,12 +8,18 @@ export default function AuthorIcons() {
   return (
     <ListNoMargin>
       <li>
-        <GrayAnchor href="#" aria-label="Author Mail">
+        <GrayAnchor
+          href="mailto:lopezaxel@protonmail.com"
+          aria-label="Author Mail"
+        >
           <FiMail aria-label="Mail" />
         </GrayAnchor>
       </li>
       <li>
-        <GrayAnchor href="#" aria-label="Author GitHub">
+        <GrayAnchor
+          href="https://github.com/lopezac"
+          aria-label="Author GitHub"
+        >
           <BsGithub aria-label="GitHub" />
         </GrayAnchor>
       </li>
