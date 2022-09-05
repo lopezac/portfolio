@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.17654e45.css",
+    "main.js": "/portfolio/static/js/main.69ff972c.js",
+    "static/media/screenshot.jpg": "/portfolio/static/media/screenshot.76c4344da2119d02a7fb.jpg",
+    "static/media/linux-original.svg": "/portfolio/static/media/linux-original.0cb7bf4e5cb9ed5e2333d50935fad3d4.svg",
+    "static/media/NotoSerif.woff2": "/portfolio/static/media/NotoSerif.23fb398e574daab103b7.woff2",
+    "static/media/Catamaran.woff2": "/portfolio/static/media/Catamaran.5520182dc0772e47a2fd.woff2",
+    "static/media/vim-original.svg": "/portfolio/static/media/vim-original.b950a09bf2b2d900c3fe5c12405df789.svg",
+    "static/media/ruby-original.svg": "/portfolio/static/media/ruby-original.0b2a0f98f2862dd9b67a14f245108848.svg",
+    "static/media/firebase-original.svg": "/portfolio/static/media/firebase-original.78c5aa0c6c7850484a86c44b87edb341.svg",
+    "static/media/jest-original.svg": "/portfolio/static/media/jest-original.19f1f902afdd6d48345325d83d8ed33b.svg",
+    "static/media/nodejs-original.svg": "/portfolio/static/media/nodejs-original.93875c5d196422272be4ec4f21cf50e9.svg",
+    "static/media/react-original.svg": "/portfolio/static/media/react-original.4e0c97009b885bfa75c5412262a46f5f.svg",
+    "static/media/python-original.svg": "/portfolio/static/media/python-original.849d0b2b5f1ec20f077dd267498bd536.svg",
+    "static/media/javascript-original.svg": "/portfolio/static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
+    "static/media/css3-original.svg": "/portfolio/static/media/css3-original.39769a8bd378bf410d6b381a8d88fa35.svg",
+    "static/media/git-original.svg": "/portfolio/static/media/git-original.c08353563539c6459b353f29d8dd7bf2.svg",
+    "static/media/vscode-original.svg": "/portfolio/static/media/vscode-original.3e91ebeb866625ec0bf6afdccff4020c.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/html5-original.svg": "/portfolio/static/media/html5-original.8664168d5bc90b1a24396f85aadbf623.svg",
+    "static/media/webpack-original.svg": "/portfolio/static/media/webpack-original.8ed2785e6fb39bf5258a6b702b306bb6.svg",
+    "static/media/npm-original.svg": "/portfolio/static/media/npm-original.87689eab730642c86d2b01f3ef4a19e3.svg",
+    "main.17654e45.css.map": "/portfolio/static/css/main.17654e45.css.map",
+    "main.69ff972c.js.map": "/portfolio/static/js/main.69ff972c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17654e45.css",
+    "static/js/main.69ff972c.js"
+  ]
+}
