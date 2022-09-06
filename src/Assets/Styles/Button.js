@@ -26,5 +26,6 @@ export const LinkBtn = styled(BorderLessBtn)(
     display: inline;
     cursor: pointer;
     font-size: 0.9rem;
+    margin-bottom: 2px;
   `
 );

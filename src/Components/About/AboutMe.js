@@ -1,4 +1,4 @@
-import screenshotImg from "../../Assets/Images/screenshot.png";
+import screenshotImg from "../../Assets/Images/screenshot.jpg";
 import { AuthorImg } from "../../Assets/Styles/Image";
 import { SubTitle, Para } from "../../Assets/Styles/Para";
 import { FlexAlignedDiv, ResponsiveFlexCol } from "../../Assets/Styles/Wrapper";
