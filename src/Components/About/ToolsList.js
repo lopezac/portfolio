@@ -5,6 +5,7 @@ import VSCodeLogo from "../../Assets/Icons/vscode-original.svg";
 import npmLogo from "../../Assets/Icons/npm-original.svg";
 import VimLogo from "../../Assets/Icons/vim-original.svg";
 import JestLogo from "../../Assets/Icons/jest-original.svg";
+import ESLintLogo from "../../Assets/Icons/eslint-original.svg";
 
 import { FlexListWrap } from "../../Assets/Styles/List";
 import { BigHeading } from "../../Assets/Styles/Para";
@@ -18,6 +19,7 @@ function ToolsList() {
         <IconToolTip img={LinuxLogo} text="Linux" />
         <IconToolTip img={GitLogo} text="Git" />
         <IconToolTip img={WebpackLogo} text="Webpack" />
+        <IconToolTip img={ESLintLogo} text="ESLint" />
         <IconToolTip img={npmLogo} text="npm" />
         <IconToolTip img={JestLogo} text="Jest" />
         <IconToolTip img={VSCodeLogo} text="Visual Studio Code" />
