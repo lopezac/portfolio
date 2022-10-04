@@ -10,7 +10,7 @@ export default function Home() {
     <FlexColCenter>
       <Title>
         Hello, I'm Axel Lopez{<br />}
-        <SpecialWord>a Front End Developer</SpecialWord>
+        <SpecialWord>a Full Stack Developer</SpecialWord>
       </Title>
       <VioletBtn>
         <GrayLink to="about">

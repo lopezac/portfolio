@@ -13,14 +13,14 @@ function AboutMe() {
         <AuthorImg src={screenshotImg} alt="" />
         <div>
           <Para>
-            Hello I'm Axel Carlos Lopez, a self-taught front end developer based
-            in Buenos Aires, Argentina. Currently learning ReactJS and
-            JavaScript, planning learning Express, MongoDB, Bootstrap and
-            TypeScript
+            Hello I'm Axel Carlos Lopez, a self-taught full stack developer
+            based in Buenos Aires, Argentina. I work with the MERN Stack.
+            Currently learning NodeJS, Express and MongoDB. In the future I'm
+            going to learn Bootstrap and TypeScript
           </Para>
           <Para>
-            Always been around computers since I've been a child, interested in
-            Linux. I enjoy solving problems.
+            Always been around computers since I've been a child, I'm interested
+            in Linux. I enjoy solving and working on problems.
           </Para>
           <FlexAlignedDiv>
             <Para>Get in touch with me. Write me at</Para>

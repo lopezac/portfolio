@@ -1,6 +1,27 @@
 {
   "projects": [
     {
+      "title": "Members Only",
+      "websiteURL": "https://calm-reaches-12167.herokuapp.com/",
+      "githubURL": "https://github.com/lopezac/members-only",
+      "img": "./Images/members-only.png",
+      "description": "In this project I give users different abilities and permissions, done to practice authentication with passportJS and username & password auth. Created with Express, NodeJS and hosted on Heroku"
+    },
+    {
+      "title": "Inventory Application",
+      "websiteURL": "https://intense-anchorage-80604.herokuapp.com",
+      "githubURL": "https://github.com/lopezac/inventory-application",
+      "img": "./Images/inventory-application.png",
+      "description": "Project done to learn Express, Pug, Mongoose and Sass along the way, implemented CRUD methods for items and categories. You can create, read, update and delete them."
+    },
+    {
+      "title": "Mini Message Board",
+      "websiteURL": "https://blooming-thicket-41630.herokuapp.com/",
+      "githubURL": "https://github.com/lopezac/mini-message-board",
+      "img": "./Images/mini-message-board.png",
+      "description": "Basic message board app, you can write messages. Written in Express, NodeJS using MongoDB, Mongoose and Pug."
+    },
+    {
       "title": "The Movie Database Clone",
       "websiteURL": "https://imdb-9b89f.web.app/",
       "githubURL": "https://github.com/lopezac/imdb-clone",
