@@ -1,7 +1,7 @@
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 
-function About() {
+export default function About() {
   return (
     <>
       <AboutMe />
@@ -9,5 +9,3 @@ function About() {
     </>
   );
 }
-
-export default About;

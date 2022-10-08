@@ -17,6 +17,9 @@ function TopNav() {
           <li>
             <WhiteLink to="projects">Projects</WhiteLink>
           </li>
+          <li>
+            <WhiteLink to="blog">Blog</WhiteLink>
+          </li>
         </ListPadding>
       </nav>
     </HeaderDiv>
