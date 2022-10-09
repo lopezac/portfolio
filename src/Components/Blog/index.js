@@ -1,10 +1,10 @@
 import Blogs from "./Blogs";
-import { SubTitle } from "../../Assets/Styles/Para";
+import { Title } from "../../Assets/Styles/Para";
 
 export default function Blog() {
   return (
     <section>
-      <SubTitle>Recent Articles</SubTitle>
+      <Title>Recent Articles</Title>
       <Blogs />
     </section>
   );

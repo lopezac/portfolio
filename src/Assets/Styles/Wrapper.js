@@ -26,6 +26,14 @@ export const FlexCol = styled(FlexDiv)`
   flex-direction: column;
 `;
 
+export const FlexColGap = styled(FlexCol)`
+  gap: 20px;
+`;
+
+export const FlexDivGap = styled(FlexDiv)`
+  gap: 20px;
+`;
+
 export const FlexColAlign = styled(FlexCol)`
   align-items: center;
   flex: 1; // may create bugs

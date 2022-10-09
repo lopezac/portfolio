@@ -13,6 +13,20 @@ export const GrayPara = styled(Para)(
   `
 );
 
+export const SmallGrayPara = styled(GrayPara)`
+  font-size: 0.9rem;
+  margin: 4px 0;
+`;
+
+export const BigParaEllipsis = styled(Para)`
+  font-size: 1.2rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+`;
+
 export const ParaNoPad = styled(Para)(
   ({ theme }) => `
     margin-top: 0;
@@ -23,6 +37,7 @@ export const ParaNoPad = styled(Para)(
 
 export const Title = styled.h1`
   font-size: 2.5rem;
+  margin: 0 0 16px 0;
 `;
 
 export const SubTitle = styled.h2`
@@ -33,6 +48,11 @@ export const SubTitle = styled.h2`
   @media (min-width: 1200px) {
     text-align: start;
   }
+`;
+
+export const PostTitle = styled.h2`
+  font-size: 2rem;
+  margin: 0; //take care
 `;
 
 export const Heading = styled.h3`

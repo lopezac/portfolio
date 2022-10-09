@@ -27,3 +27,8 @@ export const IconImg = styled.img`
   width: 48px;
   height: 48px;
 `;
+
+export const PostCardImg = styled.img`
+  width: 200px;
+  height: 200px;
+`;

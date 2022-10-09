@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import PostCard from "./PostCard";
+import { FlexColGap } from "../../Assets/Styles/Wrapper";
 import blogApi from "../../Utils/api";
 
 export default function Blogs() {
@@ -24,16 +25,17 @@ export default function Blogs() {
   }, [blogs]);
 
   return (
-    <section>
+    <FlexColGap>
       {blogs.map((blog) => {
         return (
           <PostCard
             title={blog.title}
             timestamp={blog.timestamp}
+            text={blog.text}
             image={blog.image}
           />
         );
       })}
-    </section>
+    </FlexColGap>
   );
 }

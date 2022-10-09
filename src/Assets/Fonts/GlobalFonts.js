@@ -5,7 +5,7 @@ import Poppins from "./Poppins-Regular.woff2";
 export const GlobalFonts = createGlobalStyle`
   @font-face {
     font-family: "Poppins";
-    src: url(${Poppins}) format("ttf");
+    src: url(${Poppins}) format("woff2");
   }
 
   @font-face {
