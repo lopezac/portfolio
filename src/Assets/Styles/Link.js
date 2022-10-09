@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 `;
 
 export const WhiteLink = styled(StyledLink)(

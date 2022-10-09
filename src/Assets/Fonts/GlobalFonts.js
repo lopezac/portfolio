@@ -1,16 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
-import Catamaran from "./Catamaran.woff2";
-import NotoSerif from "./NotoSerif.woff2";
+import Poppins from "./Poppins-Regular.woff2";
 
 export const GlobalFonts = createGlobalStyle`
   @font-face {
-    font-family: "Catamaran";
-    src: url(${Catamaran}) format("woff2");
+    font-family: "Poppins";
+    src: url(${Poppins}) format("ttf");
   }
 
   @font-face {
     font-family: "Noto Serif";
-    src: url(${NotoSerif}) format("woff2");
+    src: url(${Poppins}) format("woff2");
   }
 `;

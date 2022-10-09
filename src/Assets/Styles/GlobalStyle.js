@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle(
     body > #root {
       height: 100vh;
       color: ${theme.white};
-      font-family: "Noto Serif", Catamaran, arial;
+      font-family: Poppins, Helvetica, sans-serif, arial;
       display: grid;
       grid-template-rows: auto 1fr auto;
       grid-template-columns: 1fr;
@@ -27,14 +27,14 @@ export const HeaderDiv = styled.header(
   ({ theme }) => `
     grid-area: header;
     background-color: ${theme.black};
-    border-bottom: 1px solid ${theme.lightViolet};
+    border-bottom: 1px solid ${theme.mediumGray};
   `
 );
 
 export const MainDiv = styled.main(
   ({ theme }) => ` 
     grid-area: main;
-    background-color: ${theme.gray};
+    background-color: ${theme.black};
   `
 );
 
@@ -42,7 +42,8 @@ export const FooterDiv = styled.footer(
   ({ theme }) => `
     grid-area: footer;
     background-color: ${theme.black};
-    border-top: 1px solid ${theme.lightViolet};
+    border-top: 1px solid ${theme.mediumGray};
+    padding-bottom: 8px;
 
     display: flex;
     flex-direction: column;

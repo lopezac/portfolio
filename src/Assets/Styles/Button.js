@@ -20,7 +20,7 @@ export const VioletBtn = styled(BorderLessBtn)(
 
 export const LinkBtn = styled(BorderLessBtn)(
   ({ theme }) => `
-    background-color: ${theme.gray};
+    background-color: inherit;
     color: ${theme.lightViolet};
     text-decoration: underline;
     display: inline;

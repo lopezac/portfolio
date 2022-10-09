@@ -1,5 +1,5 @@
 import Blogs from "./Blogs";
-import SubTitle from "../../Assets/Styles/Para";
+import { SubTitle } from "../../Assets/Styles/Para";
 
 export default function Blog() {
   return (
