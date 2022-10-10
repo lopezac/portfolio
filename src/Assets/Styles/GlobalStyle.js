@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle(
 export const HeaderDiv = styled.header(
   ({ theme }) => `
     grid-area: header;
-    background-color: ${theme.black};
+    background-color: ${theme.darkBlack};
     border-bottom: 1px solid ${theme.mediumGray};
   `
 );
@@ -34,14 +34,14 @@ export const HeaderDiv = styled.header(
 export const MainDiv = styled.main(
   ({ theme }) => ` 
     grid-area: main;
-    background-color: ${theme.black};
+    background-color: ${theme.darkBlack};
   `
 );
 
 export const FooterDiv = styled.footer(
   ({ theme }) => `
     grid-area: footer;
-    background-color: ${theme.black};
+    background-color: ${theme.darkBlack};
     border-top: 1px solid ${theme.mediumGray};
     padding-bottom: 8px;
 

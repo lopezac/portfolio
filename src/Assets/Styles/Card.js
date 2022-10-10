@@ -19,3 +19,11 @@ export const ToolTipCard = styled.label(
     white-space: nowrap;
   `
 );
+
+export const GrayCard = styled.div(
+  ({ theme }) => `
+    background-color: ${theme.black};
+    padding: 10px;
+    width: 100%;
+  `
+);

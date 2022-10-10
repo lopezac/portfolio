@@ -22,6 +22,11 @@ export const FlexAlignedDiv = styled(FlexDiv)`
   align-items: center;
 `;
 
+export const FlexRowCenter = styled(FlexDiv)`
+  justify-content: center;
+  margin-top: 15px;
+`;
+
 export const FlexCol = styled(FlexDiv)`
   flex-direction: column;
 `;
@@ -30,8 +35,13 @@ export const FlexColGap = styled(FlexCol)`
   gap: 20px;
 `;
 
-export const FlexDivGap = styled(FlexDiv)`
-  gap: 20px;
+export const OpacityDiv = styled(FlexDiv)`
+  opacity: 0.8;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 `;
 
 export const FlexColAlign = styled(FlexCol)`

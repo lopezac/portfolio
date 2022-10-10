@@ -51,3 +51,25 @@ export const GrayAnchor = styled(WhiteAnchor)(
     }
   `
 );
+
+export const AnchorLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+`;
+
+export const WhiteAnchorLink = styled(AnchorLink)(
+  ({ theme }) => `
+    color: ${theme.white};
+  `
+);
+
+export const GrayAnchorLink = styled(AnchorLink)(
+  ({ theme }) => `
+    color: ${theme.mediumGray};
+
+    &:hover, 
+    &:focus {
+      color: ${theme.white};
+    }
+  `
+);

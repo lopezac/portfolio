@@ -8,9 +8,9 @@ export default function blogApi() {
     },
   };
 
-  async function getPosts() {
+  async function getPosts(page = 1) {
     try {
-      const url = apiUrl + "/posts";
+      const url = `${apiUrl}/posts?page=${page}`;
       const res = await fetch(url, options);
       const data = await res.json();
       return data;

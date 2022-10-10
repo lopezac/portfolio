@@ -1,4 +1,5 @@
 import Blogs from "./Blogs";
+import NavigationBlog from "./NavigationBlog";
 import { Title } from "../../Assets/Styles/Para";
 
 export default function Blog() {
@@ -6,6 +7,7 @@ export default function Blog() {
     <section>
       <Title>Recent Articles</Title>
       <Blogs />
+      <NavigationBlog />
     </section>
   );
 }
