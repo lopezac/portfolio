@@ -1,9 +1,9 @@
 import { ThemeProvider } from "styled-components";
 
-import RouteSwitch from "./Routes/RouteSwitch";
-import { GlobalStyle } from "./Assets/Styles/GlobalStyle";
-import { darkTheme } from "./Assets/Styles/Theme";
-import { GlobalFonts } from "./Assets/Fonts/GlobalFonts";
+import RouteSwitch from "./RouteSwitch";
+import { GlobalStyle } from "Assets/styles/GlobalStyle";
+import { darkTheme } from "Assets/styles/Theme";
+import { GlobalFonts } from "Assets/fonts/GlobalFonts";
 
 function App() {
   return (
