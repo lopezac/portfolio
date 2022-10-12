@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 import { Title, SpecialWord } from "Assets/styles/Para";
 import { FlexColCenter } from "Assets/styles/Wrapper";
-import { VioletBtn } from "Assets/styles/Button";
+import { VioletBtn } from "Components/button";
 import { GrayLink } from "Assets/styles/Link";
 
 export default function Home() {

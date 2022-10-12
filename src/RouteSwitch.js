@@ -1,11 +1,11 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 import Layout from "Components/layout";
-import HomePage from "Pages/home";
-import AboutPage from "Pages/about";
-import ProjectsPage from "Pages/projects";
-import BlogPage from "Pages/blog/blogPage";
-import PostPage from "Pages/blog/postPage";
+import HomePage from "Views/home";
+import AboutPage from "Views/about";
+import ProjectsPage from "Views/projects";
+import BlogPage from "Views/blog/BlogPage";
+import PostPage from "Views/blog/PostPage";
 
 function RouteSwitch() {
   return (

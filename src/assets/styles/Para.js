@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const Para = styled.p`
-  font-family: Poppins, Helvetica, sans-serif, arial;
   font-size: 1rem;
   margin: 8px 0;
 `;
 
 export const GrayPara = styled(Para)(
   ({ theme }) => `
-    font-family: Poppins, Helvetica, sans-serif, arial;
     color: ${theme.lightGray};
   `
 );

@@ -6,7 +6,8 @@ export const GlobalStyle = createGlobalStyle(
     body > #root {
       height: 100vh;
       color: ${theme.white};
-      font-family: Poppins, Helvetica, sans-serif, arial;
+      // font-family: Poppins, Helvetica, sans-serif, arial;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       display: grid;
       grid-template-rows: auto 1fr auto;
       grid-template-columns: 1fr;
