@@ -5,11 +5,11 @@ import { GrayCard } from "Assets/styles/Card";
 import { OpacityDiv } from "Assets/styles/Wrapper";
 import { PostTitle, SmallGrayPara, BigParaEllipsis } from "Assets/styles/Para";
 import { formatDate, getPostLink } from "Utils/helper";
-import { AnchorLink } from "Assets/styles/Link";
+import { StyledLink } from "Assets/styles/Link";
 
 function PostCard({ title, text, image, timestamp }) {
   return (
-    <AnchorLink href={getPostLink(title)}>
+    <StyledLink to={getPostLink(title)}>
       <OpacityDiv>
         <PostCardImg src="./Images/tmdb-clone.png" />
         <GrayCard>
@@ -18,7 +18,7 @@ function PostCard({ title, text, image, timestamp }) {
           <BigParaEllipsis>{text}</BigParaEllipsis>
         </GrayCard>
       </OpacityDiv>
-    </AnchorLink>
+    </StyledLink>
   );
 }
 

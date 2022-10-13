@@ -16,6 +16,10 @@ export const SmallGrayPara = styled(GrayPara)`
   margin: 4px 0;
 `;
 
+export const SpacedGrayPara = styled(GrayPara)`
+  line-height: 1.5rem;
+`;
+
 export const BigParaEllipsis = styled(Para)`
   font-size: 1.2rem;
 

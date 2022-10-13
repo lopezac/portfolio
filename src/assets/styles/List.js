@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { theme } from "./theme";
+
 export const FlexList = styled.ul`
   display: flex;
   padding: 0;
@@ -26,4 +28,15 @@ export const ListNoMargin = styled(FlexList)`
 
 export const FlexListWrap = styled(FlexList)`
   flex-wrap: wrap;
+`;
+
+export const ListCircle = styled(FlexList)`
+  list-style-type: circle;
+  gap: 20px;
+  color: ${theme.lightGray};
+  font-size: 0.9rem;
+
+  li:nth-child(1) {
+    list-style-type: none;
+  }
 `;

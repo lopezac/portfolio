@@ -1,10 +1,10 @@
-import { SubTitle } from "Assets/styles/Para";
+import { Title } from "Assets/styles/Para";
 import ProjectsSection from "./ProjectsSection";
 
 function Projects() {
   return (
     <section>
-      <SubTitle>My Projects</SubTitle>
+      <Title>My Projects</Title>
       <ProjectsSection />
     </section>
   );

@@ -1,8 +1,9 @@
 import styled, { createGlobalStyle } from "styled-components";
 import "modern-normalize";
 
-export const GlobalStyle = createGlobalStyle(
-  ({ theme }) => `
+import { theme } from "./theme";
+
+export const GlobalStyle = createGlobalStyle`
     body > #root {
       height: 100vh;
       color: ${theme.white};
@@ -21,33 +22,26 @@ export const GlobalStyle = createGlobalStyle(
     ::selection {
       background-color: ${theme.violet};
     }
-  `
-);
+  `;
 
-export const HeaderDiv = styled.header(
-  ({ theme }) => `
-    grid-area: header;
-    background-color: ${theme.darkBlack};
-    border-bottom: 1px solid ${theme.mediumGray};
-  `
-);
+export const HeaderDiv = styled.header`
+  grid-area: header;
+  background-color: ${theme.darkBlack};
+  border-bottom: 1px solid ${theme.mediumGray};
+`;
 
-export const MainDiv = styled.main(
-  ({ theme }) => ` 
-    grid-area: main;
-    background-color: ${theme.darkBlack};
-  `
-);
+export const MainDiv = styled.main`
+  grid-area: main;
+  background-color: ${theme.darkBlack};
+`;
 
-export const FooterDiv = styled.footer(
-  ({ theme }) => `
-    grid-area: footer;
-    background-color: ${theme.darkBlack};
-    border-top: 1px solid ${theme.mediumGray};
-    padding-bottom: 8px;
+export const FooterDiv = styled.footer`
+  grid-area: footer;
+  background-color: ${theme.darkBlack};
+  border-top: 1px solid ${theme.mediumGray};
+  padding-bottom: 8px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  `
-);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;

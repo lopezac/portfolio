@@ -15,7 +15,8 @@ function RouteSwitch() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="projects" element={<ProjectsPage />} />
-          <Route path="blog" element={<BlogPage />}>
+          <Route path="blog">
+            <Route index element={<BlogPage />} />
             <Route path=":postId" element={<PostPage />} />
           </Route>
         </Route>
