@@ -16,7 +16,7 @@ export default function CommentSection() {
         const data = await api.getPostComments(id);
         setComments(data);
       } catch (err) {
-        throw Error("Error getting post comments", id, err);
+        return console.log("Error getting post comments sec", id, err, postId);
       }
     }
     getPostComments(postId);

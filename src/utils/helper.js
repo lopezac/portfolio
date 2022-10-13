@@ -20,4 +20,28 @@ function getPostLink(title) {
   return `/blog/${formatTitle(title)}`;
 }
 
-export { getNumArray, formatDate, formatTitle, getPostLink };
+function getApiUrl() {
+  if (process.env.NODE_ENV === "development") {
+    return "http://localhost:4000";
+  }
+  return process.env.REACT_APP_API_ENDPOINT;
+}
+
+function getReqOptions(method = "GET") {
+  return {
+    method,
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json;charset=UTF-8",
+    },
+  };
+}
+
+export {
+  getNumArray,
+  formatDate,
+  formatTitle,
+  getPostLink,
+  getApiUrl,
+  getReqOptions,
+};

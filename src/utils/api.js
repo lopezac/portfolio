@@ -1,17 +1,12 @@
+import { getApiUrl, getReqOptions } from "./helper";
+
 export default function blogApi() {
-  const apiUrl = process.env.REACT_APP_API_ENDPOINT;
-  const options = {
-    method: "GET",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json;charset=UTF-8",
-    },
-  };
+  const apiUrl = getApiUrl();
 
   async function getPosts(page = 1) {
     try {
       const url = `${apiUrl}/posts?page=${page}`;
-      const res = await fetch(url, options);
+      const res = await fetch(url, getReqOptions());
       const data = await res.json();
       return data;
     } catch (err) {
@@ -22,7 +17,7 @@ export default function blogApi() {
   async function getPost(id) {
     try {
       const url = `${apiUrl}/posts/${id}`;
-      const res = await fetch(url, options);
+      const res = await fetch(url, getReqOptions());
       const data = await res.json();
       return data;
     } catch (err) {
@@ -33,7 +28,7 @@ export default function blogApi() {
   async function getPostComments(id) {
     try {
       const url = `${apiUrl}/posts/${id}/comments`;
-      const res = await fetch(url, options);
+      const res = await fetch(url, getReqOptions("GET"));
       const data = await res.json();
       return data;
     } catch (err) {

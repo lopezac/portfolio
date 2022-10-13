@@ -6,7 +6,7 @@ function PostComments({ comments }) {
     <>
       {comments.map((comment) => {
         return (
-          <article>
+          <article key={comment._id}>
             <p>{comment.username}</p>
             <p>{comment.text}</p>
           </article>
