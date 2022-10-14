@@ -17,7 +17,8 @@ export const SmallGrayPara = styled(GrayPara)`
 `;
 
 export const SpacedGrayPara = styled(GrayPara)`
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+  font-size: 1.3rem;
 `;
 
 export const BigParaEllipsis = styled(Para)`
@@ -40,6 +41,10 @@ export const ParaNoPad = styled(Para)(
 export const Title = styled.h1`
   font-size: 2.5rem;
   margin: 0 0 16px 0;
+`;
+
+export const NoMarginTitle = styled(Title)`
+  margin: 0;
 `;
 
 export const SubTitle = styled.h2`

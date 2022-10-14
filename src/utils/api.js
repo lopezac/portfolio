@@ -1,11 +1,13 @@
-import { getApiUrl, getReqOptions } from "./helper";
+import { getApiUrl, getReqOptions, getQuery } from "./helper";
 
 export default function blogApi() {
   const apiUrl = getApiUrl();
 
-  async function getPosts(page = 1) {
+  async function getPosts({ filter, sort, page }) {
     try {
-      const url = `${apiUrl}/posts?page=${page}`;
+      const query = getQuery(filter, sort, page);
+      const url = `${apiUrl}/posts?${query}`;
+      console.log("url", url);
       const res = await fetch(url, getReqOptions());
       const data = await res.json();
       return data;

@@ -51,7 +51,7 @@ export const FlexColAlign = styled(FlexCol)`
 
 export const MainFlexColCenter = styled(FlexCol)`
   padding: 30px;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
   height: 100%;
 `;

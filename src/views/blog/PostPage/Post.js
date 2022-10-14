@@ -1,16 +1,17 @@
 import { string } from "prop-types";
 
-import { Title } from "Assets/styles/Para";
+import { NoMarginTitle } from "Assets/styles/Para";
 import PostInfo from "./PostInfo";
 import { SpacedGrayPara } from "../../../assets/styles/Para";
 
 function Post({ title, timestamp, keyword, text }) {
   return (
-    <>
-      <Title>{title}</Title>
+    <section>
+      <NoMarginTitle>{title}</NoMarginTitle>
       <PostInfo timestamp={timestamp} keyword={keyword} />
       <SpacedGrayPara>{text}</SpacedGrayPara>
-    </>
+      {/* <br style={{ color: "white" }}></br> */}
+    </section>
   );
 }
 
