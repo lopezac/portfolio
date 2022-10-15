@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 
 function getNumArray(start, end) {
@@ -47,6 +48,10 @@ function getQuery(filter = "", sort = "-timestamp", page = 1) {
   return query;
 }
 
+function reloadPage() {
+  window.location.reload();
+}
+
 export {
   getNumArray,
   formatDate,
@@ -55,4 +60,5 @@ export {
   getApiUrl,
   getReqOptions,
   getQuery,
+  reloadPage,
 };

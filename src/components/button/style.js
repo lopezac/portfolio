@@ -22,11 +22,21 @@ export const StyledVioletBtn = styled(BorderLessBtn)`
   border-radius: 10px;
   padding: 15px 25px;
   transition: transform 100ms ease-in;
+  cursor: pointer;
 
   :hover,
   :focus {
     background-color: ${theme.violet};
     transform: scale(1.05);
+  }
+`;
+
+export const StyledFormBtn = styled(StyledVioletBtn)`
+  color: ${theme.white};
+  transition: none;
+  :hover,
+  :focus {
+    transform: none;
   }
 `;
 

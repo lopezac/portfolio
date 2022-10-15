@@ -1,5 +1,11 @@
 import ClipboardJS from "clipboard";
-import { StyledLink, A, StyledVioletBtn, StyledLinkBtn } from "./style";
+import {
+  StyledLink,
+  A,
+  StyledVioletBtn,
+  StyledLinkBtn,
+  StyledFormBtn,
+} from "./style";
 
 new ClipboardJS("#emailBtn");
 
@@ -18,4 +24,8 @@ export const VioletBtn = (props) => {
 
 export const LinkBtn = (props) => {
   return handleLinkWrapping(StyledLinkBtn, props);
+};
+
+export const FormBtn = (props) => {
+  return handleLinkWrapping(StyledFormBtn, props);
 };

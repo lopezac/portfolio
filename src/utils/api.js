@@ -30,7 +30,7 @@ export default function blogApi() {
   async function getPostComments(id) {
     try {
       const url = `${apiUrl}/posts/${id}/comments`;
-      const res = await fetch(url, getReqOptions("GET"));
+      const res = await fetch(url, getReqOptions());
       const data = await res.json();
       return data;
     } catch (err) {
@@ -38,5 +38,20 @@ export default function blogApi() {
     }
   }
 
-  return { getPosts, getPost, getPostComments };
+  async function submitComment(username, text, post) {
+    try {
+      const url = `${apiUrl}/comments`;
+      let options = {
+        ...getReqOptions("POST"),
+        body: JSON.stringify({ username, text, post }),
+      };
+      const res = await fetch(url, options);
+      const data = await res.json();
+      return data;
+    } catch (err) {
+      throw Error("Error submiting comment", err, username, text, post);
+    }
+  }
+
+  return { getPosts, getPost, getPostComments, submitComment };
 }

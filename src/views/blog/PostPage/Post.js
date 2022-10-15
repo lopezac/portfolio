@@ -2,7 +2,8 @@ import { string } from "prop-types";
 
 import { NoMarginTitle } from "Assets/styles/Para";
 import PostInfo from "./PostInfo";
-import { SpacedGrayPara } from "../../../assets/styles/Para";
+import { SpacedGrayPara } from "Assets/styles/Para";
+import { StyledHr } from "Assets/styles/Hr";
 
 function Post({ title, timestamp, keyword, text }) {
   return (
@@ -10,7 +11,7 @@ function Post({ title, timestamp, keyword, text }) {
       <NoMarginTitle>{title}</NoMarginTitle>
       <PostInfo timestamp={timestamp} keyword={keyword} />
       <SpacedGrayPara>{text}</SpacedGrayPara>
-      {/* <br style={{ color: "white" }}></br> */}
+      <StyledHr />
     </section>
   );
 }

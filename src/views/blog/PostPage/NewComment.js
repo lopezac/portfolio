@@ -1,9 +1,10 @@
-import CommentForm from "Components/commentForm/CommentForm";
+import { CommentForm } from "Components/forms";
+import { Heading } from "Assets/styles/Para";
 
 export default function NewComment() {
   return (
     <section>
-      <h3>Write a new comment</h3>
+      <Heading>Write a new comment</Heading>
       <CommentForm />
     </section>
   );

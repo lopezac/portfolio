@@ -1,9 +1,9 @@
 import { string } from "prop-types";
 
-import { ListCircle } from "../../../assets/styles/List";
-import { formatDate } from "../../../utils/helper";
-import { SmallGrayPara } from "../../../assets/styles/Para";
-import { LightGrayCard } from "../../../assets/styles/Card";
+import { ListCircle } from "Assets/styles/List";
+import { formatDate } from "Utils/helper";
+import { SmallGrayPara } from "Assets/styles/Para";
+import { LightGrayCard } from "Assets/styles/Card";
 
 function Comment({ username, timestamp, text }) {
   return (

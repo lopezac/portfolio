@@ -8,6 +8,7 @@ export default function ProjectsSection() {
       {projectsData.projects.map((project) => {
         return (
           <ProjectCard
+            key={project.title}
             title={project.title}
             description={project.description}
             websiteURL={project.websiteURL}
