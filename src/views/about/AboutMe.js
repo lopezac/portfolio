@@ -23,7 +23,7 @@ function AboutMe() {
             in Linux. I enjoy solving and working on problems.
           </Para>
           <FlexAlignedDiv>
-            <Para>Get in touch with me. Write me at</Para>
+            <Para>Write me at</Para>
             <BtnToolTip />
           </FlexAlignedDiv>
           <AuthorIcons />
