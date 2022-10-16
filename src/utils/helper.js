@@ -23,9 +23,9 @@ function getPostLink(title) {
 
 function getApiUrl() {
   if (process.env.NODE_ENV === "development") {
-    return "http://localhost:4000";
+    return process.env.REACT_APP_API_DEVELOPMENT;
   }
-  return process.env.REACT_APP_API_ENDPOINT;
+  return process.env.REACT_APP_API_PRODUCTION;
 }
 
 function getReqOptions(method = "GET") {

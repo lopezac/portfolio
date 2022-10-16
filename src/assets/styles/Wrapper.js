@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { theme } from "./theme";
+
 export const GridColumns3To1 = styled.section`
   display: grid;
   grid-template-columns: 1fr;

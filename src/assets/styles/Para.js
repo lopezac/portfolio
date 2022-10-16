@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Para = styled.p`
   font-size: 1rem;
   margin: 8px 0;
+  line-height: 1.3rem;
 `;
 
 export const GrayPara = styled(Para)(
@@ -34,7 +35,8 @@ export const ParaNoPad = styled(Para)(
   ({ theme }) => `
     margin-top: 0;
     padding-bottom: 10px;
-    color: ${theme.lightGray};  
+    color: ${theme.lightGray};
+    line-height: 1.1rem;
   `
 );
 

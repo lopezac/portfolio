@@ -7,6 +7,7 @@ export default function Footer() {
     <FooterDiv>
       <AuthorIcons />
       <GrayPara>Axel C. Lopez @Copyright 2022</GrayPara>
+      {/* <GrayPara>Photo: Achraf Alan, Icons: React Icons and DevIcon</GrayPara> */}
     </FooterDiv>
   );
 }
