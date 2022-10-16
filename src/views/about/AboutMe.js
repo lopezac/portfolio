@@ -19,8 +19,8 @@ function AboutMe() {
             going to learn Bootstrap and TypeScript
           </Para>
           <Para>
-            Always been around computers since I've been a child, I'm interested
-            in Linux. I enjoy solving and working on problems.
+            I have always been around computers since I've been a child, I'm
+            interested in Linux. I enjoy solving and working on problems.
           </Para>
           <FlexAlignedDiv>
             <Para>Write me at</Para>

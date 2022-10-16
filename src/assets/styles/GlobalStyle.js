@@ -2,7 +2,6 @@ import styled, { createGlobalStyle } from "styled-components";
 import "modern-normalize";
 
 import { theme } from "./theme";
-import backgroundImg from "Assets/images/pexels-achraf-alan.jpg";
 
 export const GlobalStyle = createGlobalStyle`
   body > #root {
@@ -32,11 +31,7 @@ export const HeaderDiv = styled.header`
 
 export const MainDiv = styled.main`
   grid-area: main;
-  // background-color: ${theme.darkBlack};
-  background-image: url(${backgroundImg});
-  opacity: 1;
-  background-size: cover;
-  background-position: center;
+  position: relative;
 `;
 
 export const FooterDiv = styled.footer`
