@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 
 import { ListNoMargin } from "Assets/styles/List";
@@ -22,13 +22,21 @@ export default function AuthorIcons() {
         >
           <BsGithub aria-label="GitHub" />
         </GrayAnchor>
-      </li>{" "}
+      </li>
       <li>
         <GrayAnchor
           href="https://www.linkedin.com/in/axel-lopez-a5988a252/"
           aria-label="Author LinkedIn"
         >
           <BsLinkedin aria-label="LinkedIn" />
+        </GrayAnchor>
+      </li>{" "}
+      <li>
+        <GrayAnchor
+          href="https://stackoverflow.com/users/13614378/axel-lopez"
+          aria-label="Author StackOverFlow"
+        >
+          <BsStackOverflow aria-label="BsStackOverflow" />
         </GrayAnchor>
       </li>
     </ListNoMargin>
