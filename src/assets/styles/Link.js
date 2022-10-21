@@ -11,7 +11,7 @@ export const StyledLink = styled(Link)`
 
 export const WhiteLink = styled(StyledLink)`
   :hover,
-  :focus {
+  :active {
     color: ${theme.lightViolet};
     text-decoration: underline;
   }
@@ -25,26 +25,8 @@ export const GrayLink = styled(StyledLink)`
   column-gap: 5px;
 
   :hover,
-  :focus {
+  :active {
     color: ${theme.white};
-  }
-`;
-
-export const WhiteAnchor = styled.a`
-  svg {
-    color: ${theme.white};
-    font-size: 1.8rem;
-
-    :hover,
-    :focus {
-      color: ${theme.lightViolet};
-    }
-  }
-`;
-
-export const GrayAnchor = styled(WhiteAnchor)`
-  svg {
-    color: ${theme.lightGray};
   }
 `;
 

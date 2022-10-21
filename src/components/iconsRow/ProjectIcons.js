@@ -3,7 +3,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { string } from "prop-types";
 
 import { FlexListRight } from "Assets/styles/List";
-import { WhiteAnchor } from "Assets/styles/Link";
+import { WhiteAnchor } from "Components/anchor";
 
 function ProjectIcons({ githubURL, websiteURL }) {
   return (

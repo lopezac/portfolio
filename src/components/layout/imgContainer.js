@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import backgroundImg from "Assets/images/pexels-3.jpg";
+import { theme } from "Assets/styles/theme";
 
 export const ImgContainer = styled.div`
   background: transparent;
@@ -9,6 +10,7 @@ export const ImgContainer = styled.div`
     content: "";
     z-index: -1;
     inset: 0;
+    background-color: ${theme.darkBlack};
     background-image: url(${backgroundImg});
     background-size: cover;
     width: 100%;

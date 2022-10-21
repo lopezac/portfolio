@@ -70,14 +70,12 @@ export const ResponsiveFlexCol = styled(FlexColAlign)`
   margin-bottom: 20px;
 `;
 
-export const GrayDiv = styled.div(
-  ({ theme }) => `
-    background-color: ${theme.mediumGray};
-    padding: 0 10px;
-    min-height: 175px;
-    border-radius: 0 0 5px 5px;
-  `
-);
+export const GrayDiv = styled.div`
+  background-color: ${theme.mediumGray};
+  padding: 0 10px;
+  min-height: 175px;
+  border-radius: 0 0 5px 5px;
+`;
 
 export const RelativeDiv = styled.div`
   position: relative;

@@ -2,7 +2,7 @@ import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
 
 import { ListNoMargin } from "Assets/styles/List";
-import { GrayAnchor } from "Assets/styles/Link";
+import { GrayAnchor } from "Components/anchor";
 
 export default function AuthorIcons() {
   return (

@@ -12,11 +12,11 @@ export default function Home() {
         Hello, I'm Axel Lopez{<br />}
         <SpecialWord>a Full Stack Developer</SpecialWord>
       </Title>
-      <VioletBtn>
-        <GrayLink to="about">
+      <GrayLink to="about">
+        <VioletBtn>
           Know more <FaArrowRight />
-        </GrayLink>
-      </VioletBtn>
+        </VioletBtn>
+      </GrayLink>
     </FlexColCenter>
   );
 }

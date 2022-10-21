@@ -18,6 +18,11 @@ export const StyledLink = styled(Link)`
 `;
 
 export const StyledVioletBtn = styled(BorderLessBtn)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: ${theme.white};
   background-color: ${theme.mediumViolet};
   border-radius: 10px;
   padding: 15px 25px;
@@ -27,6 +32,7 @@ export const StyledVioletBtn = styled(BorderLessBtn)`
   :hover,
   :focus {
     background-color: ${theme.violet};
+    color: ${theme.lightGray};
     transform: scale(1.05);
   }
 `;
