@@ -10,7 +10,7 @@ function Post({ title, timestamp, keyword, text }) {
     <section>
       <NoMarginTitle>{title}</NoMarginTitle>
       <PostInfo timestamp={timestamp} keyword={keyword} />
-      <SpacedGrayPara>{text}</SpacedGrayPara>
+      <SpacedGrayPara dangerouslySetInnerHTML={{ __html: text }} />
       <StyledHr />
     </section>
   );

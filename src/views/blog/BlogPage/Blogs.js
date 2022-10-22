@@ -13,7 +13,7 @@ export default function Blogs() {
   useEffect(() => {
     async function getPosts() {
       try {
-        const data = await api.getPosts({ page });
+        const data = await api.getPosts({ filter: "published=true", page });
         setPosts(data);
       } catch (err) {
         throw Error("Error getting posts at effect");

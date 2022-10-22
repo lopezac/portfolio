@@ -20,12 +20,13 @@ export const ToolTipCard = styled.label`
 export const GrayCard = styled.div`
   background-color: ${theme.mediumGray};
   padding: 10px;
-  width: 100%;
   border-radius: 0 5px 5px 0;
+  width: 73%;
 `;
 
 export const LightGrayCard = styled(GrayCard)`
   background-color: ${theme.gray};
   padding: 0 10px 10px 10px;
   border-radius: 5px;
+  width: 100%;
 `;

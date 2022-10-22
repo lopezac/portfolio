@@ -19,6 +19,7 @@ function RouteSwitch() {
             <Route index element={<BlogPage />} />
             <Route path=":postId" element={<PostPage />} />
           </Route>
+          <Route path=":postId" element={<PostPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

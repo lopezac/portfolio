@@ -12,9 +12,13 @@ export default function CommentForm() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const username = e.target.elements.username.value;
+    let username = e.target.elements.username.value;
+    if (!username.length) {
+      username = "Anonymous";
+    }
     const text = e.target.elements.text.value;
-    await api.submitComment(username, text, postId);
+    const eo = await api.submitComment(username, text, postId);
+    console.log("eo", eo);
     reloadPage();
   }
 
@@ -33,7 +37,7 @@ export default function CommentForm() {
         </FormRow>
         <FormRow>
           <label htmlFor="text">Text</label>
-          <TextArea id="text" name="text" />
+          <TextArea id="text" name="text" minLength="3" required />
         </FormRow>
         <input type="hidden" name="post" value={postId} />
         <FormBtn type="submit">Submit</FormBtn>

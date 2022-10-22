@@ -17,7 +17,7 @@ function formatTitle(title) {
 }
 
 function getPostLink(title) {
-  return `/blog/${formatTitle(title)}`;
+  return `/${formatTitle(title)}`;
 }
 
 function getApiUrl() {
