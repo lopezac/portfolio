@@ -31,7 +31,7 @@ export default function Blogs() {
             title={post.title}
             timestamp={post.timestamp}
             text={post.text}
-            image={post.image}
+            image={post.imageUrl}
           />
         );
       })}

@@ -22,6 +22,7 @@ export default function PostPage() {
     getPost();
   }, []);
 
+  if (!post) return <h1>No post with that title or id</h1>;
   return (
     <>
       <Post

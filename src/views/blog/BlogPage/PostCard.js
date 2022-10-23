@@ -11,7 +11,7 @@ function PostCard({ title, text, image, timestamp }) {
   return (
     <StyledLink to={getPostLink(title)}>
       <OpacityDiv>
-        <PostCardImg src="./Images/tmdb-clone.png" />
+        <PostCardImg src={image} />
         <GrayCard>
           <PostTitle>{title}</PostTitle>
           <SmallGrayPara>{formatDate(timestamp)}</SmallGrayPara>

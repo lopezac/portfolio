@@ -2,7 +2,7 @@ import styled from "styled-components";
 import backgroundImg from "Assets/images/pexels-3.jpg";
 import { theme } from "Assets/styles/theme";
 
-export const ImgContainer = styled.div`
+export const ColorContainer = styled.div`
   background: transparent;
   overflow: hidden;
 
@@ -11,11 +11,16 @@ export const ImgContainer = styled.div`
     z-index: -1;
     inset: 0;
     background-color: ${theme.darkBlack};
-    background-image: url(${backgroundImg});
-    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
+  }
+`;
+
+export const ImgContainer = styled(ColorContainer)`
+  ::before {
+    background-image: url(${backgroundImg});
     background-position: center;
+    background-size: cover;
   }
 `;
