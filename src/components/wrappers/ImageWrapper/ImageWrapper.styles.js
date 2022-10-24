@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImg from "Assets/images/pexels-3.jpg";
+import backgroundImg from "Assets/images/pexels-6.jpg";
 import { theme } from "Assets/styles/theme";
 
 export const ColorContainer = styled.div`
