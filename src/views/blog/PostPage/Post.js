@@ -1,16 +1,16 @@
 import { string } from "prop-types";
-
 import { NoMarginTitle } from "Assets/styles/Para";
 import PostInfo from "./PostInfo";
-import { SpacedGrayPara } from "Assets/styles/Para";
 import { StyledHr } from "Assets/styles/Hr";
+import PostText from "./PostText";
 
 function Post({ title, timestamp, keyword, text }) {
+  if (!text) return;
   return (
     <section>
       <NoMarginTitle>{title}</NoMarginTitle>
       <PostInfo timestamp={timestamp} keyword={keyword} />
-      <SpacedGrayPara dangerouslySetInnerHTML={{ __html: text }} />
+      <PostText text={text} />
       <StyledHr />
     </section>
   );

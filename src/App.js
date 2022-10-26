@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-
 import RouteSwitch from "./RouteSwitch";
 import { GlobalStyle } from "Assets/styles/GlobalStyle";
 import { theme } from "Assets/styles/theme";
