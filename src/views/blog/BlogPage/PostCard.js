@@ -1,4 +1,5 @@
 import { string } from "prop-types";
+import parse from "html-react-parser";
 
 import { PostCardImg } from "Assets/styles/Image";
 import { GrayCard } from "Assets/styles/Card";
@@ -8,6 +9,20 @@ import { formatDate, getPostLink } from "Utils/helper";
 import { StyledLink } from "Assets/styles/Link";
 
 function PostCard({ title, text, image, timestamp }) {
+  function parseText(text) {
+    let parsedText = parse(text);
+    if (parsedText.length) {
+      for (let row of parsedText) {
+        if (!["pre", "img", "span"].includes(row["type"])) {
+          return row.props.children;
+        }
+      }
+    }
+    if (!["pre", "img", "span"].includes(parsedText["type"])) {
+      return parsedText.props.children;
+    }
+  }
+
   return (
     <StyledLink to={getPostLink(title)}>
       <OpacityDiv>
@@ -15,7 +30,7 @@ function PostCard({ title, text, image, timestamp }) {
         <GrayCard>
           <PostTitle>{title}</PostTitle>
           <SmallGrayPara>{formatDate(timestamp)}</SmallGrayPara>
-          <BigParaEllipsis>{text}</BigParaEllipsis>
+          <BigParaEllipsis>{parseText(text)}</BigParaEllipsis>
         </GrayCard>
       </OpacityDiv>
     </StyledLink>
