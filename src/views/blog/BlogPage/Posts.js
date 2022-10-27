@@ -5,7 +5,7 @@ import { FlexColGap } from "Assets/styles/Wrapper";
 import blogApi from "Utils/api";
 import UseQueryParams from "Hooks/UseQueryParams";
 
-export default function Blogs() {
+export default function Posts() {
   const { page } = UseQueryParams();
   const [posts, setPosts] = useState([]);
   const api = blogApi();
