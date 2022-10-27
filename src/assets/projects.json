@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "title": "Portfolio Blog CMS",
+      "websiteURL": "https://lopezaxel-blog-cms.netlify.app/",
+      "githubURL": "https://github.com/lopezac/portfolio-blog-cms/",
+      "img": "./Images/portfolio-blog-cms.png",
+      "description": "This is portfolio blog CMS, I sign in and create and edit comments and posts of my blog. Done with React."
+    },
+    {
+      "title": "Portfolio Blog API",
+      "websiteURL": "https://lopezaxel.netlify.app/blog",
+      "githubURL": "https://github.com/lopezac/portfolio-blog-api",
+      "img": "./Images/portfolio-blog-api.png",
+      "description": "This is the backend of my Portfolio Blog, a RESTful API, it has CRUD operations for posts and comments, and user authentication. Done with Express & NodeJS."
+    },
+    {
       "title": "Members Only",
       "websiteURL": "https://calm-reaches-12167.herokuapp.com/",
       "githubURL": "https://github.com/lopezac/members-only",
