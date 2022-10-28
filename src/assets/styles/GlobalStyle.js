@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
 import "modern-normalize";
-import "./prism.css";
 
 import { theme } from "./theme";
 

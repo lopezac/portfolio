@@ -11,17 +11,4 @@ module.exports = {
       Utils: path.resolve(__dirname, "src/utils"),
     },
   },
-  // babel: {
-  //   plugins: [
-  //     [
-  //       "prismjs",
-  //       {
-  //         languages: ["javascript", "css", "python", "markup"],
-  //         plugins: ["line-numbers"],
-  //         theme: "twilight",
-  //         css: true,
-  //       },
-  //     ],
-  //   ],
-  // },
 };
