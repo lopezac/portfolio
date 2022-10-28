@@ -1,11 +1,11 @@
-import UseQueryParams from "Hooks/UseQueryParams";
+import { useQueryParams } from "Hooks";
 import { getNumArray } from "Utils/helper";
 import { GrayAnchorLink, WhiteAnchorLink } from "Assets/styles/Link";
 import { FlexList } from "Assets/styles/List";
 import { FlexRowCenter } from "Assets/styles/Wrapper";
 
 export default function NavigationBlog() {
-  let { page } = UseQueryParams();
+  let { page } = useQueryParams();
   if (!page) page = 1;
 
   return (

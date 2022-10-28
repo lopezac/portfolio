@@ -1,3 +1,4 @@
+import { useDocTitle } from "Hooks";
 import screenshotImg from "Assets/images/screenshot.jpg";
 import { AuthorImg } from "Assets/styles/Image";
 import { SubTitle, Para } from "Assets/styles/Para";
@@ -6,6 +7,8 @@ import BtnToolTip from "Components/card/BtnToolTip";
 import AuthorIcons from "Components/iconsRow/AuthorIcons";
 
 function AboutMe() {
+  const [docTitle, setDocTitle] = useDocTitle("About Me");
+
   return (
     <section>
       <SubTitle>About Me</SubTitle>

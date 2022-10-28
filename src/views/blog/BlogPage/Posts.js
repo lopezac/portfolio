@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-
-import PostCard from "./PostCard";
+import { useQueryParams } from "Hooks";
 import { FlexColGap } from "Assets/styles/Wrapper";
 import blogApi from "Utils/api";
-import UseQueryParams from "Hooks/UseQueryParams";
+import PostCard from "./PostCard";
 
 export default function Posts() {
-  const { page } = UseQueryParams();
+  const { page } = useQueryParams();
   const [posts, setPosts] = useState([]);
   const api = blogApi();
 
