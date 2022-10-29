@@ -37,15 +37,6 @@ export const FlexColGap = styled(FlexCol)`
   gap: 20px;
 `;
 
-export const OpacityDiv = styled(FlexDiv)`
-  opacity: 0.8;
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-`;
-
 export const FlexColAlign = styled(FlexCol)`
   align-items: center;
   flex: 1; // may create bugs
@@ -56,6 +47,13 @@ export const MainFlexColCenter = styled(FlexCol)`
   max-width: 800px;
   margin: 0 auto;
   height: 100%;
+
+  @media (max-width: 700px) {
+    padding: 30px 10px;
+    max-width: 100vw;
+    margin: 0;
+    // height: 100%;
+  }
 `;
 
 export const FlexColCenter = styled(FlexColAlign)`

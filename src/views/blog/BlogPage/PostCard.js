@@ -3,10 +3,10 @@ import parse from "html-react-parser";
 
 import { PostCardImg } from "Assets/styles/Image";
 import { GrayCard } from "Assets/styles/Card";
-import { OpacityDiv } from "Assets/styles/Wrapper";
 import { PostTitle, SmallGrayPara, BigParaEllipsis } from "Assets/styles/Para";
 import { formatDate, getPostLink } from "Utils/helper";
 import { StyledLink } from "Assets/styles/Link";
+import OpacityDiv from "./OpacityDiv";
 
 function PostCard({ title, text, image, timestamp }) {
   function parseText(text) {

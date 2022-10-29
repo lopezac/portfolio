@@ -16,12 +16,6 @@ export const FlexListRight = styled(FlexList)`
   margin-bottom: 12px;
 `;
 
-export const ListPadding = styled(FlexList)`
-  gap: 40px;
-  padding: 15px 40px;
-  margin: 0;
-`;
-
 export const ListNoMargin = styled(FlexList)`
   margin-bottom: 0;
 `;

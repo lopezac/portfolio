@@ -1,7 +1,7 @@
 import { useDocTitle } from "Hooks";
 import screenshotImg from "Assets/images/screenshot.jpg";
 import { AuthorImg } from "Assets/styles/Image";
-import { SubTitle, Para } from "Assets/styles/Para";
+import { Title, Para } from "Assets/styles/Para";
 import { FlexAlignedDiv, ResponsiveFlexCol } from "Assets/styles/Wrapper";
 import BtnToolTip from "Components/card/BtnToolTip";
 import AuthorIcons from "Components/iconsRow/AuthorIcons";
@@ -11,7 +11,7 @@ function AboutMe() {
 
   return (
     <section>
-      <SubTitle>About Me</SubTitle>
+      <Title>About Me</Title>
       <ResponsiveFlexCol>
         <AuthorImg src={screenshotImg} alt="" />
         <div>

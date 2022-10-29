@@ -1,7 +1,7 @@
 import { HeaderDiv } from "Assets/styles/GlobalStyle";
 import { WhiteLink } from "Assets/styles/Link";
-import { ListPadding } from "Assets/styles/List";
-import { LiMarginLeft } from "Assets/styles/ListItem";
+import ListPadding from "./ListPadding";
+import LiMarginLeft from "./LiMarginLeft";
 
 function TopNav() {
   return (
