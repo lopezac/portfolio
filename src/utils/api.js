@@ -9,8 +9,7 @@ export default function blogApi() {
       const url = `${apiUrl}/posts?${query}`;
 
       const res = await fetch(url, getReqOptions());
-      const data = await res.json();
-      return data;
+      return await res.json();
     } catch (err) {
       throw Error("Error getting posts, at api", err);
     }
@@ -20,8 +19,7 @@ export default function blogApi() {
     try {
       const url = `${apiUrl}/posts/${id}`;
       const res = await fetch(url, getReqOptions());
-      const data = await res.json();
-      return data;
+      return await res.json();
     } catch (err) {
       throw Error("Error getting post, at api", id, err);
     }
@@ -31,8 +29,7 @@ export default function blogApi() {
     try {
       const url = `${apiUrl}/posts/${id}/comments`;
       const res = await fetch(url, getReqOptions());
-      const data = await res.json();
-      return data;
+      return await res.json();
     } catch (err) {
       throw Error("Error getting post comments at api", id, err);
     }
@@ -46,8 +43,7 @@ export default function blogApi() {
         body: JSON.stringify({ username, text, post }),
       };
       const res = await fetch(url, options);
-      const data = await res.json();
-      return data;
+      return await res.json();
     } catch (err) {
       throw Error("Error submiting comment", err, username, text, post);
     }

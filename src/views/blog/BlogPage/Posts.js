@@ -21,6 +21,7 @@ export default function Posts() {
     getPosts();
   }, []);
 
+  if (!posts.length) return <h2>It seems there are no posts yet!</h2>;
   return (
     <FlexColGap>
       {posts.map((post) => {
@@ -34,7 +35,6 @@ export default function Posts() {
           />
         );
       })}
-      {!posts.length && <h2>It seems there are no posts yet!</h2>}
     </FlexColGap>
   );
 }

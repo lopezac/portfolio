@@ -15,6 +15,7 @@ export const ToolTipCard = styled.label`
   padding: 10px;
   min-width: 50px;
   white-space: nowrap;
+  z-index: 1;
 `;
 
 export const GrayCard = styled.div`
