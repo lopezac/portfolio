@@ -9,20 +9,23 @@ const OpacityDiv = styled(FlexDiv)`
     opacity: 1;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     flex-direction: column;
 
     img {
-      // height: 175px;
-    }
-
-    img,
-    div {
+      height: 100%;
       width: 100%;
     }
 
     div {
       border-radius: 0 0 5px 5px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    img {
+      height: 200px;
     }
   }
 `;

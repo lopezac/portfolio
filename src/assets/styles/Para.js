@@ -23,7 +23,7 @@ export const SpacedGrayPara = styled(GrayPara)`
 `;
 
 export const BigParaEllipsis = styled(Para)`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -56,6 +56,10 @@ export const SubTitle = styled.h2`
 
   @media (min-width: 1200px) {
     text-align: start;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 1.8rem;
   }
 `;
 
