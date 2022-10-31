@@ -15,6 +15,11 @@ const StyledPostText = styled.div`
     line-height: 1.3rem;
   }
 
+  code {
+    background-color: #282c34;
+    color: #979eaa;
+  }
+
   code[class*="language-"],
   pre[class*="language-"] {
     color: #000;
