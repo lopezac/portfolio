@@ -10,15 +10,9 @@ export default function Posts() {
   const api = blogApi();
 
   useEffect(() => {
-    async function getPosts() {
-      try {
-        const data = await api.getPosts({ filter: "published=true", page });
-        setPosts(data);
-      } catch (err) {
-        throw Error("Error getting posts at effect");
-      }
-    }
-    getPosts();
+    api
+      .getPosts({ filter: "published=true", page })
+      .then((data) => setPosts(data));
   }, []);
 
   if (!posts.length) return <h2>It seems there are no posts yet!</h2>;
