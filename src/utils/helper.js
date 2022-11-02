@@ -1,33 +1,33 @@
 import { format } from "date-fns";
 
-function getNumArray(start, end) {
+export const getNumArray = (start, end) => {
   let nums = [];
   for (let i = start; i <= end; i++) {
     nums.push(i);
   }
   return nums;
-}
+};
 
-function formatDate(date) {
+export const formatDate = (date) => {
   return format(new Date(date), "PP");
-}
+};
 
-function formatTitle(title) {
+export const formatTitle = (title) => {
   return title.toLowerCase().replaceAll(" ", "-");
-}
+};
 
-function getPostLink(title) {
+export const getPostLink = (title) => {
   return `/${formatTitle(title)}`;
-}
+};
 
-function getApiUrl() {
+export const getApiUrl = () => {
   if (process.env.NODE_ENV === "development") {
     return process.env.REACT_APP_API_DEVELOPMENT;
   }
   return process.env.REACT_APP_API_PRODUCTION;
-}
+};
 
-function getReqOptions(method = "GET") {
+export const getReqOptions = (method = "GET") => {
   return {
     method,
     headers: {
@@ -35,9 +35,9 @@ function getReqOptions(method = "GET") {
       "Content-Type": "application/json;charset=UTF-8",
     },
   };
-}
+};
 
-function getQuery(filter = "", sort = "-timestamp", page = 1) {
+export const getQuery = (filter = "", sort = "-timestamp", page = 1) => {
   let query;
   if (filter) {
     query = `${filter}&sort=${sort}&page=${page}`;
@@ -45,19 +45,8 @@ function getQuery(filter = "", sort = "-timestamp", page = 1) {
     query = `sort=${sort}&page=${page}`;
   }
   return query;
-}
+};
 
-function reloadPage() {
+export const reloadPage = () => {
   window.location.reload();
-}
-
-export {
-  getNumArray,
-  formatDate,
-  formatTitle,
-  getPostLink,
-  getApiUrl,
-  getReqOptions,
-  getQuery,
-  reloadPage,
 };

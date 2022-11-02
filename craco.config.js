@@ -9,6 +9,7 @@ module.exports = {
       Hooks: path.resolve(__dirname, "src/hooks"),
       Views: path.resolve(__dirname, "src/views"),
       Utils: path.resolve(__dirname, "src/utils"),
+      Context: path.resolve(__dirname, "src/context"),
     },
   },
 };

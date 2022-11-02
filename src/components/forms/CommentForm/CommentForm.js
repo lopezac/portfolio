@@ -1,14 +1,16 @@
 import { useParams } from "react-router-dom";
 
-import { FormRow, StyledCommentForm } from "./CommentForm.style";
-import { FormBtn } from "Components/button";
-import { TextField, TextArea } from "../index";
 import blogApi from "Utils/api";
 import { reloadPage } from "Utils/helper";
+import { FormBtn } from "Components/button";
+import { useSocket } from "Hooks";
+import { FormRow, StyledCommentForm } from "./CommentForm.style";
+import { TextField, TextArea } from "../index";
 
 export default function CommentForm() {
-  const api = blogApi();
   const { postId } = useParams();
+  const api = blogApi();
+  const socket = useSocket();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -17,8 +19,8 @@ export default function CommentForm() {
       username = "Anonymous";
     }
     const text = e.target.elements.text.value;
-    const eo = await api.submitComment(username, text, postId);
-    console.log("eo", eo);
+    const comment = await api.submitComment(username, text, postId);
+    socket.emit("create comment", comment);
     reloadPage();
   }
 

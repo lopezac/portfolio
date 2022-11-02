@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import blogApi from "Utils/api";
+import { useSocket } from "Hooks";
 import PostComments from "./PostComments";
 import NewComment from "./NewComment";
 
@@ -9,17 +10,13 @@ export default function CommentSection() {
   const [comments, setComments] = useState([]);
   const { postId } = useParams();
   const api = blogApi();
+  const socket = useSocket();
 
   useEffect(() => {
-    async function getPostComments(id) {
-      try {
-        const data = await api.getPostComments(id);
-        setComments(data);
-      } catch (err) {
-        return console.log("Error getting post comments sec", id, err, postId);
-      }
-    }
-    getPostComments(postId);
+    api.getPostComments(postId).then((data) => setComments(data));
+    socket.on("get comment", (newComments) => {
+      console.log("newComments at get comment", newComments);
+    });
   }, []);
 
   return (
