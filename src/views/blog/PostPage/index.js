@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-
+import { useParams, useNavigate } from "react-router-dom";
 import blogApi from "Utils/api";
+import { useSocket } from "Hooks";
+import { formatTitle } from "Utils/helper";
 import Post from "./Post";
 import CommentSection from "./CommentSection";
 
@@ -9,6 +10,8 @@ export default function PostPage() {
   const { postId } = useParams();
   const [post, setPost] = useState({});
   const api = blogApi();
+  const socket = useSocket();
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function getPost() {
@@ -21,6 +24,16 @@ export default function PostPage() {
     }
     getPost();
   }, []);
+
+  useEffect(() => {
+    socket.on("post:delete", () => {
+      setPost(null);
+    });
+    socket.on("post:update", (updatedPost) => {
+      console.log("updatedPost", updatedPost);
+      navigate(`/${formatTitle(updatedPost.title)}`);
+    });
+  }, [socket, post]);
 
   if (!post) return <h1>No post with that title or id</h1>;
   return (

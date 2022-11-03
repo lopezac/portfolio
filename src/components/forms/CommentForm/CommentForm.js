@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 
 import blogApi from "Utils/api";
-import { reloadPage } from "Utils/helper";
 import { FormBtn } from "Components/button";
 import { useSocket } from "Hooks";
 import { FormRow, StyledCommentForm } from "./CommentForm.style";
@@ -20,8 +19,7 @@ export default function CommentForm() {
     }
     const text = e.target.elements.text.value;
     const comment = await api.submitComment(username, text, postId);
-    socket.emit("create comment", comment);
-    reloadPage();
+    socket.emit("comment:create", comment);
   }
 
   return (

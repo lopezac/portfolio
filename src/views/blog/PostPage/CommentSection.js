@@ -14,10 +14,23 @@ export default function CommentSection() {
 
   useEffect(() => {
     api.getPostComments(postId).then((data) => setComments(data));
-    socket.on("get comment", (newComments) => {
-      console.log("newComments at get comment", newComments);
-    });
   }, []);
+
+  useEffect(() => {
+    socket.on("comment:create", (newComment) => {
+      setComments([...comments, newComment]);
+    });
+    socket.on("comment:delete", (commentId) => {
+      setComments(comments.filter((comment) => comment._id !== commentId));
+    });
+    socket.on("comment:update", (updatedComment) => {
+      const newComments = comments.filter(
+        (comment) => comment._id !== updatedComment._id
+      );
+      newComments.push(updatedComment);
+      setComments(newComments);
+    });
+  }, [socket, comments]);
 
   return (
     <section>

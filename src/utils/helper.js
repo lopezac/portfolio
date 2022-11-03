@@ -9,6 +9,7 @@ export const getNumArray = (start, end) => {
 };
 
 export const formatDate = (date) => {
+  if (!date) return;
   return format(new Date(date), "PP");
 };
 
