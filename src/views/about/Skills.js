@@ -1,6 +1,7 @@
 import { Title } from "Assets/styles/Para";
 import LanguagesList from "./LanguagesList";
-import TechnologiesList from "./TechnologiesList";
+import FrontEndList from "./FrontEndList";
+import BackEndList from "./BackEndList";
 import ToolsList from "./ToolsList";
 
 function Skills() {
@@ -8,7 +9,8 @@ function Skills() {
     <section>
       <Title>My Skills</Title>
       <LanguagesList />
-      <TechnologiesList />
+      <FrontEndList />
+      <BackEndList />
       <ToolsList />
     </section>
   );

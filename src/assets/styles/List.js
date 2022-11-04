@@ -25,7 +25,7 @@ export const FlexListWrap = styled(FlexList)`
 `;
 
 export const ListCircle = styled(FlexList)`
-  list-style-type: circle;
+  list-style-type: disc;
   gap: 20px;
   color: ${theme.lightGray};
   font-size: 0.9rem;

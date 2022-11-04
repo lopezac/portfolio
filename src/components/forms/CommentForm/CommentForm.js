@@ -20,6 +20,7 @@ export default function CommentForm() {
     const text = e.target.elements.text.value;
     const comment = await api.submitComment(username, text, postId);
     socket.emit("comment:create", comment);
+    e.target.reset();
   }
 
   return (
