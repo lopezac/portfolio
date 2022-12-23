@@ -5,8 +5,6 @@ import npmLogo from "Assets/icons/npm-original.svg";
 import JestLogo from "Assets/icons/jest-original.svg";
 import ESLintLogo from "Assets/icons/eslint-original.svg";
 import UbuntuLogo from "Assets/icons/ubuntu-plain.svg";
-import HerokuLogo from "Assets/icons/heroku-original.svg";
-// import VimLogo from "Assets/icons/vim-original.svg";
 import VSCodeLogo from "Assets/icons/vscode-original.svg";
 
 import { FlexListWrap } from "Assets/styles/List";
@@ -25,9 +23,7 @@ function ToolsList() {
         <IconToolTip img={npmLogo} text="npm" />
         <IconToolTip img={JestLogo} text="Jest" />
         <IconToolTip img={UbuntuLogo} text="Ubuntu Linux distro" />
-        <IconToolTip img={HerokuLogo} text="Heroku" />
         <IconToolTip img={VSCodeLogo} text="Visual Studio Code" />
-        {/* <IconToolTip img={VimLogo} text="Vim" /> */}
       </FlexListWrap>
     </article>
   );

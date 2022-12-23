@@ -18,9 +18,7 @@ function AboutMe() {
           <Para>
             Hello I'm Axel Carlos Lopez, a self-taught full stack developer
             based in Buenos Aires, Argentina. I work with the MERN Stack.
-            Currently learning Express and TypeScript. I would like to learn
-            these technologies in the future, Bootstrap, Redux, Redis, NextJS,
-            GraphQL and Figma.
+            Currently learning TypeScript and Featured-Sliced architecture.
           </Para>
           <Para>
             I have always been around computers since I've been a child, I'm
