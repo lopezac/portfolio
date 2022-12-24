@@ -7,6 +7,8 @@ export default function blogApi() {
     try {
       const query = getQuery(filter, sort, page);
       const url = `${apiUrl}/posts?${query}`;
+      console.log("apiurl", apiUrl);
+      console.log("url", url);
 
       const res = await fetch(url, getReqOptions());
       return await res.json();
