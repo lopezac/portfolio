@@ -6,6 +6,7 @@ import JestLogo from "Assets/icons/jest-original.svg";
 import ESLintLogo from "Assets/icons/eslint-original.svg";
 import UbuntuLogo from "Assets/icons/ubuntu-plain.svg";
 import VSCodeLogo from "Assets/icons/vscode-original.svg";
+import PrettierLogo from "Assets/icons/prettier-original.svg";
 
 import { FlexListWrap } from "Assets/styles/List";
 import { BigHeading } from "Assets/styles/Para";
@@ -24,6 +25,7 @@ function ToolsList() {
         <IconToolTip img={JestLogo} text="Jest" />
         <IconToolTip img={UbuntuLogo} text="Ubuntu Linux distro" />
         <IconToolTip img={VSCodeLogo} text="Visual Studio Code" />
+        <IconToolTip img={PrettierLogo} text="Prettier code formatter" />
       </FlexListWrap>
     </article>
   );

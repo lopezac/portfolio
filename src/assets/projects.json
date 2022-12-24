@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "title": "Odinbook Frontend",
+      "websiteURL": "https://odinbooker.netlify.app",
+      "githubURL": "https://github.com/lopezac/odinbook-frontend/",
+      "img": "./Images/odinbook-frontend.png",
+      "description": "A Facebook clone with many features, auth, create posts, comments, send friend requests, send messages, get notifications in real time. Done with Feature-Sliced architecture."
+    },
+    {
+      "title": "Odinbook API",
+      "websiteURL": "https://odinbooker.netlify.app",
+      "githubURL": "https://github.com/lopezac/odinbook-api/",
+      "img": "./Images/odinbook-api.png",
+      "description": "The RESTful API of odinbook-frontend, got many routes and controllers, with authentication, done with Test Driven Development."
+    },
+    {
       "title": "Portfolio Blog CMS",
       "websiteURL": "https://lopezaxel-blog-cms.netlify.app/",
       "githubURL": "https://github.com/lopezac/portfolio-blog-cms/",
