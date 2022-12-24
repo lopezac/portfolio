@@ -23,9 +23,9 @@ export const getPostLink = (title) => {
 
 export const getApiUrl = () => {
   if (process.env.NODE_ENV === "development") {
-    return process.env.REACT_APP_API_DEVELOPMENT;
+    return process.env.API_DEVELOPMENT;
   }
-  return process.env.REACT_APP_API_PRODUCTION;
+  return process.env.API_PRODUCTION;
 };
 
 export const getReqOptions = (method = "GET") => {
