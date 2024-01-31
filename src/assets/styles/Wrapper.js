@@ -78,3 +78,7 @@ export const GrayDiv = styled.div`
 export const RelativeDiv = styled.div`
   position: relative;
 `;
+
+export const MarginDiv = styled.div`
+  margin: 0 10px;
+`;

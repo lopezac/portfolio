@@ -9,16 +9,16 @@ import Title from "./Title";
 
 export default function Home() {
   const [docTitle, setDocTitle] = useDocTitle(
-    "Axel Lopez | Full Stack Developer"
+    "Axel Lopez | Software Engineer student"
   );
 
   return (
     <>
       <ImgContainer />
       <FlexColCenter>
+        <Title>Hello, I'm Axel Lopez{<br />}</Title>
         <Title>
-          Hello, I'm Axel Lopez{<br />}
-          <SpecialWord>a Full Stack Developer</SpecialWord>
+          <SpecialWord>a Software Engineer student</SpecialWord>
         </Title>
         <GrayLink to="about">
           <VioletBtn>

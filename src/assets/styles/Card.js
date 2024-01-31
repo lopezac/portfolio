@@ -13,9 +13,10 @@ export const ToolTipCard = styled.label`
   background-color: ${theme.mediumGray};
   color: ${theme.white};
   padding: 10px;
-  min-width: 50px;
   white-space: nowrap;
   z-index: 1;
+  display: flex;
+  justify-content: center;
 `;
 
 export const GrayCard = styled.div`

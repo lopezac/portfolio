@@ -14,12 +14,9 @@ function TopNav() {
           <LiMarginLeft>
             <WhiteLink to="about">About</WhiteLink>
           </LiMarginLeft>
-          <li>
+          {/* <li>
             <WhiteLink to="projects">Projects</WhiteLink>
-          </li>
-          <li>
-            <WhiteLink to="blog">Blog</WhiteLink>
-          </li>
+          </li> */}
         </ListPadding>
       </nav>
     </HeaderDiv>

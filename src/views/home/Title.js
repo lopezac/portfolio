@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { Title } from "Assets/styles/Para";
 
 const ResponsiveTitle = styled(Title)`
+  h1 {
+    padding: 0 auto;
+  }
+
   @media (max-width: 450px) {
     font-size: 2.2rem;
   }

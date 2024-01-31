@@ -3,9 +3,8 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Layout from "Components/layout";
 import HomePage from "Views/home";
 import AboutPage from "Views/about";
-import ProjectsPage from "Views/projects";
-import BlogPage from "Views/blog/BlogPage";
-import PostPage from "Views/blog/PostPage";
+// import ProjectsPage from "Views/projects";
+// import PostPage from "Views/blog/PostPage";
 
 function RouteSwitch() {
   return (
@@ -14,12 +13,8 @@ function RouteSwitch() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="blog">
-            <Route index element={<BlogPage />} />
-            <Route path=":postId" element={<PostPage />} />
-          </Route>
-          <Route path=":postId" element={<PostPage />} />
+          {/* <Route path="projects" element={<ProjectsPage />} />
+          <Route path=":postId" element={<PostPage />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

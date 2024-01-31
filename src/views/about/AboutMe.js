@@ -16,9 +16,9 @@ function AboutMe() {
         <AuthorImg src={screenshotImg} alt="" />
         <div>
           <Para>
-            Hello I'm Axel Carlos Lopez, a self-taught full stack developer
-            based in Buenos Aires, Argentina. I work with the MERN Stack.
-            Currently learning TypeScript and Featured-Sliced architecture.
+            Hello I'm Axel Carlos Lopez, a Software Engineer student at FIUBA,
+            currently in 2nd year. Currently learning C, contributing at some
+            open source projects, and working on a small Python script.
           </Para>
           <Para>
             I have always been around computers since I've been a child, I'm
