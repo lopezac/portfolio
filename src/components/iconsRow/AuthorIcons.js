@@ -25,12 +25,12 @@ export default function AuthorIcons() {
       </li>
       <li>
         <GrayAnchor
-          href="https://www.linkedin.com/in/axel-lopez-a5988a252/"
+          href="https://www.linkedin.com/in/axelcarloslopez/"
           aria-label="Author LinkedIn"
         >
           <BsLinkedin aria-label="LinkedIn" />
         </GrayAnchor>
-      </li>{" "}
+      </li>
       <li>
         <GrayAnchor
           href="https://stackoverflow.com/users/13614378/axel-lopez"
